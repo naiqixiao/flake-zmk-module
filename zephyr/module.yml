@@ -1,5 +1,4 @@
 build:
   settings:
     board_root: .
-    dts_root:
-      - zmk-helpers/include
+    dts_root: zmk-helpers/include
