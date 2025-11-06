@@ -33,7 +33,7 @@
         combo_at {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AT>;
-            key-positions = <LT3 LM3 1 11>;
+            key-positions = <1 11>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -41,7 +41,7 @@
         combo_hash {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp HASH>;
-            key-positions = <LT2 LM2 2 12>;
+            key-positions = <2 12>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -49,7 +49,7 @@
         combo_dllr {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp DLLR>;
-            key-positions = <LT1 LM1 3 13>;
+            key-positions = <3 13>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -57,7 +57,7 @@
         combo_prcnt {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PRCNT>;
-            key-positions = <LT0 LM0 4 14>;
+            key-positions = <4 14>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -67,7 +67,7 @@
         combo_grave {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp GRAVE>;
-            key-positions = <LM3 LB3 11 21>;
+            key-positions = <11 21>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -75,7 +75,7 @@
         combo_bslh {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp BSLH>;
-            key-positions = <LM2 LB2 12 22>;
+            key-positions = <12 22>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -83,7 +83,7 @@
         combo_equal {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EQUAL>;
-            key-positions = <LM1 LB1 23 13>;
+            key-positions = <23 13>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -91,7 +91,7 @@
         combo_tilde {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp TILDE>;
-            key-positions = <LM0 LB0 14 24>;
+            key-positions = <14 24>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -101,7 +101,7 @@
         combo_cut {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(X)>;
-            key-positions = <LB3 LB1 21 23>;
+            key-positions = <21 23>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -109,7 +109,7 @@
         combo_paste {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(V)>;
-            key-positions = <LB2 LB1 23 22>;
+            key-positions = <23 22>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -117,7 +117,7 @@
         combo_copy {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(C)>;
-            key-positions = <LB3 LB2 21 22>;
+            key-positions = <21 22>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -125,7 +125,7 @@
         combo_undo {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(Z)>;
-            key-positions = <LB3 LB4 20 21>;
+            key-positions = <20 21>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -136,7 +136,7 @@
         combo_caret {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp CARET>;
-            key-positions = <RT0 RM0 5 15>;
+            key-positions = <5 15>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -144,7 +144,7 @@
         combo_plus {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PLUS>;
-            key-positions = <RT1 RM1 6 16>;
+            key-positions = <6 16>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -152,7 +152,7 @@
         combo_star {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp STAR>;
-            key-positions = <RT2 RM2 7 17>;
+            key-positions = <7 17>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -160,7 +160,7 @@
         combo_amps {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AMPS>;
-            key-positions = <RT3 RM3 8 18>;
+            key-positions = <8 18>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -170,7 +170,7 @@
         combo_under {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp UNDER>;
-            key-positions = <RM0 RB0 15 25>;
+            key-positions = <15 25>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -178,7 +178,7 @@
         combo_minus {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp MINUS>;
-            key-positions = <RM1 RB1 16 26>;
+            key-positions = <16 26>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -186,7 +186,7 @@
         combo_fslh {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp FSLH>;
-            key-positions = <RM2 RB2 27 17>;
+            key-positions = <27 17>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -194,7 +194,7 @@
         combo_pipe {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PIPE>;
-            key-positions = <RM3 RB3 18 28>;
+            key-positions = <18 28>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -204,7 +204,7 @@
         combo_lbkt {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBKT>;
-            key-positions = <RT1 RT2 6 7>;
+            key-positions = <6 7>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -212,7 +212,7 @@
         combo_rbkt {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBKT>;
-            key-positions = <RT2 RT3 7 8>;
+            key-positions = <7 8>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -220,7 +220,7 @@
         combo_lpar {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LPAR>;
-            key-positions = <RM1 RM2 16 17>;
+            key-positions = <16 17>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -228,7 +228,7 @@
         combo_rpar {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RPAR>;
-            key-positions = <RM2 RM3 17 18>;
+            key-positions = <17 18>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -236,7 +236,7 @@
         combo_lbrc {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBRC>;
-            key-positions = <RB1 RB2 26 27>;
+            key-positions = <26 27>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -244,7 +244,7 @@
         combo_rbrc {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBRC>;
-            key-positions = <RB2 RB3 27 28>;
+            key-positions = <27 28>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -252,7 +252,7 @@
         combo_lt {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LT>;
-            key-positions = <RM0 RM1 15 16>;
+            key-positions = <15 16>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -260,7 +260,7 @@
         combo_gt {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp GT>;
-            key-positions = <RM3 RM4 18 19>;
+            key-positions = <18 19>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -270,7 +270,7 @@
         combo_esc {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp ESC>;
-            key-positions = <LT4 LT3 1 0>;
+            key-positions = <1 0>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -278,7 +278,7 @@
         combo_caps {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp CAPS>;
-            key-positions = <LM4 LM3 11 10>;
+            key-positions = <11 10>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -288,7 +288,7 @@
         combo_capsw {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&caps_word>;
-            key-positions = <LM1 RM1 13 16>;
+            key-positions = <13 16>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
