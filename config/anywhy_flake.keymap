@@ -581,38 +581,38 @@
             label = "BASE";
 
             bindings = <
-                        &kp Q     &kp W     &kp E      &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O     &kp P
-                        &kp A     &kp S     &kp D      &kp F      &kp G    &kp H  &kp J      &kp K      &kp L     &kp SEMI
-                        &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT   &kp FSLH
-                        &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 1    &mo 2  &kp LSHFT  &kp LGUI   &kp LALT
+                        &hml DOUBLE_QUOTES  Q   &hml GRAVE  W           &kp E               &kp R                   &kp T               &kp Y   &hmr UNDER  U   &hmr RS(I)  I   &hmr SEMICOLON  O   &kp P   
+                        &hml LEFT_SHIFT  A      &hml LEFT_CONTROL  S   &hml LEFT_ALT  D     &hml LEFT_COMMAND  F    &hml AT  G          &kp H   &hmr RCMD  J   &hmr RALT  K   &hmr RSHFT  L   &kp RETURN
+                        &kp Z                   &kp X                   &kp C               &kp V                   &kp B               &hmr EXCLAMATION  N   &hmr COLN  M   &hmr SQT  COMMA   &hmr QUESTION  DOT   &kp SLASH
+                                    XXX XXX    &kp LEFT_COMMAND   &lt NUM  TAB   &lt NAV  SPACE         &kp BACKSPACE   &lt SYM  SPACE   &mo FUN XXX XXX
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        nav_layer {
-            
-            label = "NAV";
-
-            bindings = <
-                        &kp ESC   &kp BACKSPACE  &kp TAB    &kp ENTER  &kp DEL     &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS
-                        &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT  &kp LBKT    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp N0
-                        &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp RBKT    &kp SQT    &kp N1  &kp N2  &kp N3  &kp BSLH
-                        &trans    &trans         &trans     &trans     &none       &none      &trans  &trans  &trans  &trans
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         num_layer {
 
             label = "NUM";
 
             bindings = <
-                        &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP
-                        &kp F10  &kp F4  &kp F5  &kp F6  &kp CAPS          &bt1   &kp RSHFT   &kp RCTRL     &kp RALT      &kp RGUI
-                        &kp F11  &kp F1  &kp F2  &kp F3  &studio_unlock    &bt0   &kp C_PP    &kp C_PREV    &kp C_NEXT    &kp C_BRI_DN
-                        &trans   &trans  &trans  &trans  &none             &none  &trans      &trans        &trans        &trans
+                        XXX &kp F9 &kp F10 &kp F11 &kp F12 XXX          &kp N7      &kp N8 &kp N9 XXX
+                        XXX &kp F5 &kp F6  &kp F7  &kp F8  &kp PERCENT  &kp N4      &kp N5 &kp N6 &kp EQUAL
+                        XXX &kp F1 &kp F2  &kp F3  &kp F4  &kp N0       &kp N1      &kp N2 &kp N3 &kp DOT
+                        XXX XXX &kp BACKSPACE XXX &kp SPACE &kp LC(SPACE) &kp RG(SPACE) &trans XXX XXX 
+            >;
+        };
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+        nav_layer {
+            
+            label = "NAV";
+
+            bindings = <
+                        XXX              XXX               XXX              XXX               XXX                XXX            &kp RC(UP_ARROW)       XXX        &kp RG(TAB)          XXX
+                        &sk LEFT_SHIFT   &sk LEFT_CONTROL  &sk LEFT_ALT     &sk LEFT_COMMAND  XXX                &kp PG_UP      &kp LEFT               &kp UP     &kp RIGHT            &kp C_NEXT
+                        XXX              XXX               XXX              XXX               XXX                &kp C_MUTE     &kp C_PP               &kp PG_DN  &kp TAB              &kp DOWN
+                        XXX              XXX               &kp LEFT_SHIFT   &kp LALT          XXX                &kp DELETE     &kp RGUI               &mo 3      XXX                  XXX 
             >;
         };
 
@@ -623,10 +623,10 @@
             label = "FUN";
 
             bindings = <
-                        &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP
-                        &kp F10  &kp F4  &kp F5  &kp F6  &kp CAPS          &bt1   &kp RSHFT   &kp RCTRL     &kp RALT      &kp RGUI
-                        &kp F11  &kp F1  &kp F2  &kp F3  &studio_unlock    &bt0   &kp C_PP    &kp C_PREV    &kp C_NEXT    &kp C_BRI_DN
-                        &trans   &trans  &trans  &trans  &none             &none  &trans      &trans        &trans        &trans
+                        &bt BT_CLR  XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         &bt BT_CLR
+                        XXX         &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))      XXX         XXX      XXX             XXX         XXX
+                        XXX         &bt BT_PRV  XXX             XXX             &ext_power EP_OFF  &kp C_MUTE  &kp C_PP &ext_power EP_ON XXX        XXX
+                        XXX         XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         XXX
             >;
 
         };
@@ -638,10 +638,10 @@
             label = "SYM";
 
             bindings = <
-                        &kp F12  &kp F7  &kp F8  &kp F9  &soft_off         &bt2   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_UP
-                        &kp F10  &kp F4  &kp F5  &kp F6  &kp CAPS          &bt1   &kp RSHFT   &kp RCTRL     &kp RALT      &kp RGUI
-                        &kp F11  &kp F1  &kp F2  &kp F3  &studio_unlock    &bt0   &kp C_PP    &kp C_PREV    &kp C_NEXT    &kp C_BRI_DN
-                        &trans   &trans  &trans  &trans  &none             &none  &trans      &trans        &trans        &trans
+                        XXX        &kp AMPS    &kp ASTRK   &kp LBRC    &kp RBRC        XXX          &kp N7      &kp N8      &kp N9      XXX
+                        XXX        &kp COLON   &kp DLLR    &kp PRCNT   &kp CARET       &kp PLUS     &kp PERCENT &kp N4      &kp N5      &kp N6
+                        XXX        &kp TILDE   &kp EXCL    &kp AT      &kp HASH        &kp PIPE     &kp C_MUTE  &kp C_PP    &kp N0      &kp N1
+                        &trans     &trans      &trans      &kp LPAR    &kp RPAR        &kp SPACE    XXX         XXX         &trans      &trans
             >;
 
         };
