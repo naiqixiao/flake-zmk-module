@@ -2,10 +2,32 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define XXX &none
+#define TODO ___
+#define ___ &trans
+
+#define BASE 0
+#define NAV 1
+#define NUM 2
+#define FUN 3
+#define SYM 4
+
 / {
     combos {
         compatible = "zmk,combos";
 
+        combo_closetab {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&macro_closetab>;
+        };
+
+        combo_lasttab {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&macro_lasttab>;
+        }; 
+        
         bt_sel_3 {
             bindings = <&bt3>;
             key-positions = <42 30>;
