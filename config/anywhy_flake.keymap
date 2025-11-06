@@ -19,57 +19,46 @@
 
 #pragma once
 
-
 #define LT0  4  // left-top row
 #define LT1  3
 #define LT2  2
 #define LT3  1
 #define LT4  0
-
 #define RT0  5  // right-top row
 #define RT1  6
 #define RT2  7
 #define RT3  8
 #define RT4  9
-
 #define LM0 14  // left-middle row
 #define LM1 13
 #define LM2 12
 #define LM3 11
 #define LM4 10
-
 #define RM0 15  // right-middle row
 #define RM1 16
 #define RM2 17
 #define RM3 18
 #define RM4 19
-
-
 #define LB0 24  // left-bottom row
 #define LB1 23
 #define LB2 22
 #define LB3 21
 #define LB4 20
-
 #define RB0 25  // right-bottom row
 #define RB1 26
 #define RB2 27
 #define RB3 28
 #define RB4 29
-
 #define LH0 34  // left-thumb row
 #define LH1 33
 #define LH2 32
 #define LH3 31
 #define LH4 30
-
 #define RH0 35  // right-thumb row
 #define RH1 36
 #define RH2 37
 #define RH3 38
 #define RH4 39
-
-
 #define XXX &none
 #define TODO ___
 #define ___ &trans
@@ -79,31 +68,36 @@
 #define FUN 3
 #define SYM 4
 
-
 /* ------------------------ general config ----------------------- */
 
 #define QUICK_TAP_MS 175
 
 // smart-layer config
-&caps_word {  
+
+&caps_word {
     // /delete-property/ ignore-modifiers; // mods deactivate, requires PR #1451
+
     /delete-property/ ignore-numbers;
+
     continue-list = <BACKSPACE ENTER DELETE UNDERSCORE MINUS>;
 };
 
 // key-repeat config
+
 &key_repeat {
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>; // repeat all keys
 };
 
 // sticky key aka 'one-shot mods'
+
 &sk {
     release-after-ms = <2000>;
     quick-release;
 };
 
 // default layer-tap config
-&lt {  
+
+&lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
@@ -113,11 +107,11 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 // right hand
 #define THUMBS LH4 LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3 RH4                     // thumbs
 
-
 // use require-prior-idle-ms for combos
-#undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <80>;
 
+#undef COMBO_HOOK
+
+#define COMBO_HOOK require-prior-idle-ms = <80>;
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 40
 
@@ -554,10 +548,11 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -566,6 +561,7 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
@@ -577,74 +573,61 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         base_layer {
-
             label = "BASE";
-
             bindings = <
-                        &hml DOUBLE_QUOTES  Q   &hml GRAVE  W           &kp E               &kp R                   &kp T               &kp Y   &hmr UNDER  U   &hmr RS(I)  I   &hmr SEMICOLON  O   &kp P   
-                        &hml LEFT_SHIFT  A      &hml LEFT_CONTROL  S   &hml LEFT_ALT  D     &hml LEFT_COMMAND  F    &hml AT  G          &kp H   &hmr RCMD  J   &hmr RALT  K   &hmr RSHFT  L   &kp RETURN
-                        &kp Z                   &kp X                   &kp C               &kp V                   &kp B               &hmr EXCLAMATION  N   &hmr COLN  M   &hmr SQT  COMMA   &hmr QUESTION  DOT   &kp SLASH
-                                    &none &none    &kp LEFT_COMMAND   &lt NUM  TAB   &lt NAV  SPACE         &kp BACKSPACE   &lt SYM  SPACE   &mo FUN &none &none
+  &hml DOUBLE_QUOTES Q  &hml GRAVE W         &kp E             &kp R                &kp T            &kp Y               &hmr UNDER U   &kp I           &hmr SEMICOLON O   &kp P
+  &hml LEFT_SHIFT A     &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml LEFT_COMMAND F  &hml AT G        &kp H               &hmr RCMD J    &hmr RALT K     &hmr RSHFT L       &kp RETURN
+  &kp Z                 &kp X                &kp C             &kp V                &kp B            &hmr EXCLAMATION N  &hmr COLN M    &hmr SQT COMMA  &hmr QUESTION DOT  &kp SLASH
+  &kp LEFT_SHIFT        &kp C_AC_REPLY       &kp LEFT_COMMAND  &lt NUM TAB          &lt NAV SPACE    &kp BACKSPACE       &lt SYM SPACE  &mo FUN         &kp RIGHT_ALT      &kp RIGHT_SHIFT
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         num_layer {
-
             label = "NUM";
-
             bindings = <
-                        &none &kp F9 &kp F10 &kp F11 &kp F12 &none          &kp N7      &kp N8 &kp N9 &none
-                        &none &kp F5 &kp F6  &kp F7  &kp F8  &kp PERCENT  &kp N4      &kp N5 &kp N6 &kp EQUAL
-                        &none &kp F1 &kp F2  &kp F3  &kp F4  &kp N0       &kp N1      &kp N2 &kp N3 &kp DOT
-                        &none &none &kp BACKSPACE &none &kp SPACE &kp LC(SPACE) &kp RG(SPACE) &trans &none &none 
+  &none   &kp F9  &kp F10        &kp F11  &kp F12      &none          &kp N7         &kp N8  &kp N9  &none
+  &none   &kp F5  &kp F6         &kp F7   &kp F8       &kp PERCENT    &kp N4         &kp N5  &kp N6  &kp N0
+  &none   &kp F1  &kp F2         &kp F3   &kp F4       &kp EQUAL      &kp N1         &kp N2  &kp N3  &kp DOT
+  &trans  &trans  &kp BACKSPACE  &none    &kp SPACE    &kp LC(SPACE)  &kp RG(SPACE)  &trans  &trans  &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
-            
             label = "NAV";
-
             bindings = <
-                        &none              &none               &none              &none               &none                &none            &kp RC(UP_ARROW)       &none        &kp RG(TAB)          &none
-                        &sk LEFT_SHIFT   &sk LEFT_CONTROL  &sk LEFT_ALT     &sk LEFT_COMMAND  &none                &kp PG_UP      &kp LEFT               &kp UP     &kp RIGHT            &kp C_NEXT
-                        &none              &none               &none              &none               &none                &kp C_MUTE     &kp C_PP               &kp PG_DN  &kp TAB              &kp DOWN
-                        &none              &none               &kp LEFT_SHIFT   &kp LALT          &none                &kp DELETE     &kp RGUI               &mo 3      &none                  &none 
+  &none           &none             &none           &none             &none    &none          &kp RC(UP_ARROW)  &none           &kp RG(TAB)  &none
+  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT    &sk LEFT_COMMAND  &none    &kp PG_UP      &kp LEFT          &kp UP          &kp RIGHT    &kp C_NEXT
+  &none           &none             &none           &none             &none    &kp PAGE_DOWN  &kp TAB           &kp DOWN_ARROW  &kp TAB      &none
+  &trans          &trans            &kp LEFT_SHIFT  &kp LALT          &none    &kp DELETE     &kp RGUI          &trans          &trans       &trans
             >;
         };
 
         //▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         fun_layer {
-
             label = "FUN";
-
             bindings = <
-                        &bt BT_CLR  &none         &none             &none             &none                &none         &none      &none             &none         &bt BT_CLR
-                        &none         &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))      &none         &none      &none             &none         &none
-                        &none         &bt BT_PRV  &none             &none             &none                &kp C_MUTE  &kp C_PP &none             &none         &none
-                        &none         &none         &none             &none             &none                &none         &none      &none             &none         &none
+  &bt BT_CLR  &none       &none           &none           &none            &none       &none     &none  &none  &bt BT_CLR
+  &none       &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none       &none     &none  &none  &none
+  &none       &bt BT_PRV  &none           &none           &none            &kp C_MUTE  &kp C_PP  &none  &none  &none
+  &none       &none       &none           &none           &none            &none       &none     &none  &none  &none
             >;
-
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         sym_layer {
-
             label = "SYM";
-
             bindings = <
-                        &none        &kp AMPS    &kp ASTRK   &kp LBRC    &kp RBRC        &none          &kp N7      &kp N8      &kp N9      &none
-                        &none        &kp COLON   &kp DLLR    &kp PRCNT   &kp CARET       &kp PLUS     &kp PERCENT &kp N4      &kp N5      &kp N6
-                        &none        &kp TILDE   &kp EXCL    &kp AT      &kp HASH        &kp PIPE     &kp C_MUTE  &kp C_PP    &kp N0      &kp N1
-                        &trans     &trans      &trans      &kp LPAR    &kp RPAR        &kp SPACE    &none         &none         &trans      &trans
+  &none   &kp AMPS   &kp ASTRK  &kp LBRC   &kp RBRC     &none      &kp N7       &kp N8    &kp N9  &none
+  &none   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS   &kp PERCENT  &kp N4    &kp N5  &kp N6
+  &none   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE   &kp C_MUTE   &kp C_PP  &kp N0  &kp N1
+  &trans  &trans     &trans     &kp LPAR   &kp RPAR     &kp SPACE  &none        &none     &trans  &trans
             >;
-
         };
-
     };
 };
