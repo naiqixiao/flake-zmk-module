@@ -584,7 +584,7 @@
                         &hml DOUBLE_QUOTES  Q   &hml GRAVE  W           &kp E               &kp R                   &kp T               &kp Y   &hmr UNDER  U   &hmr RS(I)  I   &hmr SEMICOLON  O   &kp P   
                         &hml LEFT_SHIFT  A      &hml LEFT_CONTROL  S   &hml LEFT_ALT  D     &hml LEFT_COMMAND  F    &hml AT  G          &kp H   &hmr RCMD  J   &hmr RALT  K   &hmr RSHFT  L   &kp RETURN
                         &kp Z                   &kp X                   &kp C               &kp V                   &kp B               &hmr EXCLAMATION  N   &hmr COLN  M   &hmr SQT  COMMA   &hmr QUESTION  DOT   &kp SLASH
-                                    XXX XXX    &kp LEFT_COMMAND   &lt NUM  TAB   &lt NAV  SPACE         &kp BACKSPACE   &lt SYM  SPACE   &mo FUN XXX XXX
+                                    &none &none    &kp LEFT_COMMAND   &lt NUM  TAB   &lt NAV  SPACE         &kp BACKSPACE   &lt SYM  SPACE   &mo FUN &none &none
             >;
         };
 
@@ -595,10 +595,10 @@
             label = "NUM";
 
             bindings = <
-                        XXX &kp F9 &kp F10 &kp F11 &kp F12 XXX          &kp N7      &kp N8 &kp N9 XXX
-                        XXX &kp F5 &kp F6  &kp F7  &kp F8  &kp PERCENT  &kp N4      &kp N5 &kp N6 &kp EQUAL
-                        XXX &kp F1 &kp F2  &kp F3  &kp F4  &kp N0       &kp N1      &kp N2 &kp N3 &kp DOT
-                        XXX XXX &kp BACKSPACE XXX &kp SPACE &kp LC(SPACE) &kp RG(SPACE) &trans XXX XXX 
+                        &none &kp F9 &kp F10 &kp F11 &kp F12 &none          &kp N7      &kp N8 &kp N9 &none
+                        &none &kp F5 &kp F6  &kp F7  &kp F8  &kp PERCENT  &kp N4      &kp N5 &kp N6 &kp EQUAL
+                        &none &kp F1 &kp F2  &kp F3  &kp F4  &kp N0       &kp N1      &kp N2 &kp N3 &kp DOT
+                        &none &none &kp BACKSPACE &none &kp SPACE &kp LC(SPACE) &kp RG(SPACE) &trans &none &none 
             >;
         };
 
@@ -609,10 +609,10 @@
             label = "NAV";
 
             bindings = <
-                        XXX              XXX               XXX              XXX               XXX                XXX            &kp RC(UP_ARROW)       XXX        &kp RG(TAB)          XXX
-                        &sk LEFT_SHIFT   &sk LEFT_CONTROL  &sk LEFT_ALT     &sk LEFT_COMMAND  XXX                &kp PG_UP      &kp LEFT               &kp UP     &kp RIGHT            &kp C_NEXT
-                        XXX              XXX               XXX              XXX               XXX                &kp C_MUTE     &kp C_PP               &kp PG_DN  &kp TAB              &kp DOWN
-                        XXX              XXX               &kp LEFT_SHIFT   &kp LALT          XXX                &kp DELETE     &kp RGUI               &mo 3      XXX                  XXX 
+                        &none              &none               &none              &none               &none                &none            &kp RC(UP_ARROW)       &none        &kp RG(TAB)          &none
+                        &sk LEFT_SHIFT   &sk LEFT_CONTROL  &sk LEFT_ALT     &sk LEFT_COMMAND  &none                &kp PG_UP      &kp LEFT               &kp UP     &kp RIGHT            &kp C_NEXT
+                        &none              &none               &none              &none               &none                &kp C_MUTE     &kp C_PP               &kp PG_DN  &kp TAB              &kp DOWN
+                        &none              &none               &kp LEFT_SHIFT   &kp LALT          &none                &kp DELETE     &kp RGUI               &mo 3      &none                  &none 
             >;
         };
 
@@ -623,10 +623,10 @@
             label = "FUN";
 
             bindings = <
-                        &bt BT_CLR  XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         &bt BT_CLR
-                        XXX         &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))      XXX         XXX      XXX             XXX         XXX
-                        XXX         &bt BT_PRV  XXX             XXX             XXX                &kp C_MUTE  &kp C_PP XXX             XXX         XXX
-                        XXX         XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         XXX
+                        &bt BT_CLR  &none         &none             &none             &none                &none         &none      &none             &none         &bt BT_CLR
+                        &none         &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))      &none         &none      &none             &none         &none
+                        &none         &bt BT_PRV  &none             &none             &none                &kp C_MUTE  &kp C_PP &none             &none         &none
+                        &none         &none         &none             &none             &none                &none         &none      &none             &none         &none
             >;
 
         };
@@ -638,10 +638,10 @@
             label = "SYM";
 
             bindings = <
-                        XXX        &kp AMPS    &kp ASTRK   &kp LBRC    &kp RBRC        XXX          &kp N7      &kp N8      &kp N9      XXX
-                        XXX        &kp COLON   &kp DLLR    &kp PRCNT   &kp CARET       &kp PLUS     &kp PERCENT &kp N4      &kp N5      &kp N6
-                        XXX        &kp TILDE   &kp EXCL    &kp AT      &kp HASH        &kp PIPE     &kp C_MUTE  &kp C_PP    &kp N0      &kp N1
-                        &trans     &trans      &trans      &kp LPAR    &kp RPAR        &kp SPACE    XXX         XXX         &trans      &trans
+                        &none        &kp AMPS    &kp ASTRK   &kp LBRC    &kp RBRC        &none          &kp N7      &kp N8      &kp N9      &none
+                        &none        &kp COLON   &kp DLLR    &kp PRCNT   &kp CARET       &kp PLUS     &kp PERCENT &kp N4      &kp N5      &kp N6
+                        &none        &kp TILDE   &kp EXCL    &kp AT      &kp HASH        &kp PIPE     &kp C_MUTE  &kp C_PP    &kp N0      &kp N1
+                        &trans     &trans      &trans      &kp LPAR    &kp RPAR        &kp SPACE    &none         &none         &trans      &trans
             >;
 
         };
