@@ -6,7 +6,7 @@ url: https://github.com/anywhy-io/flake
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
 siblings:
   - anywhy_flake_left
   - anywhy_flake_right
-
