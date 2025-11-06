@@ -575,10 +575,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q              &hml GRAVE W         &kp E             &kp R                &kp T            &kp Y               &hmr UNDER U   &kp I           &hmr SEMICOLON O   &kp P
-  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml LEFT_COMMAND F  &hml AT G        &kp H               &hmr RCMD J    &hmr RALT K     &hmr RSHFT L       &kp RETURN
-  &kp Z              &kp X                &kp C             &kp V                &kp B            &hmr EXCLAMATION N  &hmr COLN M    &hmr SQT COMMA  &hmr QUESTION DOT  &kp SLASH
-  &kp LEFT_SHIFT     &kp LCTRL            &kp LEFT_COMMAND  &lt NUM TAB          &lt NAV SPACE    &kp BACKSPACE       &lt SYM SPACE  &mo FUN         &kp RIGHT_ALT      &kp RIGHT_SHIFT
+  &hml DOUBLE_QUOTES Q  &hml GRAVE W         &kp E             &kp R                &kp T            &kp Y               &hmr UNDER U   &kp I           &hmr SEMICOLON O   &kp P
+  &hml LEFT_SHIFT A     &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml LEFT_COMMAND F  &hml AT G        &kp H               &hmr RCMD J    &hmr RALT K     &hmr RSHFT L       &kp RETURN
+  &kp Z                 &kp X                &kp C             &kp V                &kp B            &hmr EXCLAMATION N  &hmr COLN M    &hmr SQT COMMA  &hmr QUESTION DOT  &kp SLASH
+  &kp LEFT_SHIFT        &kp LCTRL            &kp LEFT_COMMAND  &lt NUM TAB          &lt NAV SPACE    &kp BACKSPACE       &lt SYM SPACE  &mo FUN         &kp RIGHT_ALT      &kp RIGHT_SHIFT
             >;
         };
 
@@ -611,10 +611,10 @@
         fun_layer {
             label = "FUN";
             bindings = <
-  &bt BT_CLR  &none       &none           &none           &none            &none       &none     &none  &none  &bt BT_CLR
-  &none       &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none       &none     &none  &none  &none
-  &none       &bt BT_PRV  &none           &none           &none            &kp C_MUTE  &kp C_PP  &none  &none  &none
-  &none       &none       &none           &none           &none            &none       &none     &none  &none  &none
+  &bt0   &bt1        &bt2            &bt3            &bt4             &none       &none     &none  &none  &bt BT_CLR
+  &none  &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none       &none     &none  &none  &none
+  &none  &bt BT_PRV  &none           &none           &none            &kp C_MUTE  &kp C_PP  &none  &none  &none
+  &none  &none       &none           &none           &none            &none       &none     &none  &none  &none
             >;
         };
 
