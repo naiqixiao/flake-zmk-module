@@ -625,7 +625,7 @@
             bindings = <
                         &bt BT_CLR  XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         &bt BT_CLR
                         XXX         &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))      XXX         XXX      XXX             XXX         XXX
-                        XXX         &bt BT_PRV  XXX             XXX             &ext_power EP_OFF  &kp C_MUTE  &kp C_PP &ext_power EP_ON XXX        XXX
+                        XXX         &bt BT_PRV  XXX             XXX             XXX                &kp C_MUTE  &kp C_PP XXX             XXX         XXX
                         XXX         XXX         XXX             XXX             XXX                XXX         XXX      XXX             XXX         XXX
             >;
 
