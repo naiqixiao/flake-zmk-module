@@ -121,6 +121,24 @@
     };
 
     behaviors {
+
+        /**
+         * bt0-bt4: Bluetooth Profile 3 Selector with Modifier Morph
+         * 
+         * This behavior creates a dual-function key for Bluetooth profile management:
+         * - Normal press: Selects and connects to Bluetooth profile 0-4
+         * - Shift + press: Clears/removes Bluetooth profile 0-4
+         * 
+         * The mod-morph behavior allows different actions based on whether
+         * shift modifiers (left or right) are held during activation.
+         * 
+         * Properties:
+         * - compatible: Uses ZMK's mod-morph behavior driver
+         * - bindings: Primary action (e.g., select BT profile 3) and morphed action (e.g., lear profile 3)
+         * - #binding-cells: Set to 0 (no parameters required when invoking this behavior)
+         * - mods: Triggers morphed behavior when LSHIFT or RSHIFT is held
+         */
+
         bt0: bt0 {
             compatible = "zmk,behavior-mod-morph";
             label = "BT0";
