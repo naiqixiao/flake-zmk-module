@@ -94,6 +94,30 @@
             bindings = <&bt BT_SEL 4 &bt BT_CLR>;
             label = "BT_CLR_4";
         };
+
+        macro_closetab: macro_closetab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+
+        macro_lasttab: macro_lasttab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp LS(T)>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
     };
 
     behaviors {
