@@ -388,16 +388,16 @@
         combo_semi {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp SEMI>;
-            key-positions = <18 19>;
-            layers = <1>;
+            key-positions = <17 27>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
         combo_colon {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp COLON>;
-            key-positions = <18 19>;
-            layers = <1>;
+            key-positions = <16 26>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
