@@ -203,7 +203,7 @@
         combo_bslh {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp BSLH>;
-            key-positions = <2 12>;
+            key-positions = <12 22>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -289,7 +289,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AMPS>;
             key-positions = <15 16>;
-            layers = <BASE NAV NUM>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
