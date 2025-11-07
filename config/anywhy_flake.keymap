@@ -121,13 +121,13 @@
 
         combo_closetab {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <>;
             bindings = <&macro_closetab>;
         };
 
         combo_lasttab {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <>;
             bindings = <&macro_lasttab>;
         };
 
@@ -137,7 +137,7 @@
         combo_excl {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EXCL>;
-            key-positions = <12 13>;
+            key-positions = <13 12>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -153,7 +153,7 @@
         combo_hash {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp HASH>;
-            key-positions = <2 12>;
+            key-positions = <2 1>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -161,7 +161,7 @@
         combo_dllr {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp DLLR>;
-            key-positions = <3 13>;
+            key-positions = <3 2>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -185,7 +185,7 @@
         combo_squot {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp SQT>;
-            key-positions = <3 4>;
+            key-positions = <13 23>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -195,7 +195,7 @@
         combo_grave {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp GRAVE>;
-            key-positions = <1 11>;
+            key-positions = <11 21>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -211,7 +211,7 @@
         combo_equal {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EQUAL>;
-            key-positions = <23 13>;
+            key-positions = <4 3>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -439,19 +439,19 @@
 
         bt_sel_3 {
             bindings = <&bt3>;
-            key-positions = <42 30 31 32 39>;
+            key-positions = <42>;
             layers = <2>;
         };
 
         bt_sel_4 {
             bindings = <&bt4>;
-            key-positions = <30 18 31 32>;
+            key-positions = <>;
             layers = <2>;
         };
 
         bt_sel_0 {
             bindings = <&bt0>;
-            key-positions = <39 38 30 31 32>;
+            key-positions = <>;
             layers = <2>;
         };
     };
