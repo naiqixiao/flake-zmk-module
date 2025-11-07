@@ -385,6 +385,22 @@
             require-prior-idle-ms = <80>;
         };
 
+        combo_semi {
+            timeout-ms = <COMBO_TERM_FAST>;
+            bindings = <&kp SEMI>;
+            key-positions = <18 19>;
+            layers = <1>;
+            require-prior-idle-ms = <80>;
+        };
+
+        combo_colon {
+            timeout-ms = <COMBO_TERM_FAST>;
+            bindings = <&kp COLON>;
+            key-positions = <18 19>;
+            layers = <1>;
+            require-prior-idle-ms = <80>;
+        };
+
         combo_gt {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp GT>;
