@@ -273,7 +273,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PLUS>;
             key-positions = <16 17>;
-            layers = <BASE NAV NUM>;
+            layers = <1>;
             require-prior-idle-ms = <80>;
         };
 
@@ -281,7 +281,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp STAR>;
             key-positions = <26 27>;
-            layers = <BASE NAV NUM>;
+            layers = <1>;
             require-prior-idle-ms = <80>;
         };
 
@@ -299,7 +299,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp UNDER>;
             key-positions = <25 26>;
-            layers = <BASE NAV NUM>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -307,7 +307,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp MINUS>;
             key-positions = <17 18>;
-            layers = <BASE NAV NUM>;
+            layers = <1>;
             require-prior-idle-ms = <80>;
         };
 
@@ -315,7 +315,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp FSLH>;
             key-positions = <27 28>;
-            layers = <BASE NAV NUM>;
+            layers = <1>;
             require-prior-idle-ms = <80>;
         };
 
@@ -333,7 +333,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBKT>;
             key-positions = <6 7>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -341,7 +341,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -349,7 +349,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LPAR>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -357,7 +357,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RPAR>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -365,7 +365,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBRC>;
             key-positions = <26 27>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -373,7 +373,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBRC>;
             key-positions = <27 28>;
-            layers = <1>;
+            layers = <0>;
             require-prior-idle-ms = <80>;
         };
 
@@ -423,19 +423,19 @@
 
         bt_sel_3 {
             bindings = <&bt3>;
-            key-positions = <42 30>;
+            key-positions = <42 30 31 32 39>;
             layers = <2>;
         };
 
         bt_sel_4 {
             bindings = <&bt4>;
-            key-positions = <30 18>;
+            key-positions = <30 18 31 32>;
             layers = <2>;
         };
 
         bt_sel_0 {
             bindings = <&bt0>;
-            key-positions = <39 38>;
+            key-positions = <39 38 30 31 32>;
             layers = <2>;
         };
     };
