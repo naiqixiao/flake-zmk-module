@@ -134,6 +134,23 @@
         // Left hand vertical combos //
         // Between top and home row
 
+
+        combo_excl {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+            layers = <BASE NAV NUM>;
+            require-prior-idle-ms = <80>;
+        };
+
+        combo_pound {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            bindings = <&kp POUND>;
+            key-positions = <1 12>;
+            layers = <BASE NAV NUM>;
+            require-prior-idle-ms = <80>;
+        };
+
         combo_at {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AT>;
@@ -162,6 +179,30 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PRCNT>;
             key-positions = <4 14>;
+            layers = <BASE NAV NUM>;
+            require-prior-idle-ms = <80>;
+        };
+
+        combo_under {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            bindings = <&kp UNDER>;
+            key-positions = <4 14>;
+            layers = <BASE NAV NUM>;
+            require-prior-idle-ms = <80>;
+        };
+
+        combo_dquot {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <0 11>;
+            layers = <BASE NAV NUM>;
+            require-prior-idle-ms = <80>;
+        };
+
+        combo_squot {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            bindings = <&kp SQT>;
+            key-positions = <0 12>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
