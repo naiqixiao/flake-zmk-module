@@ -219,7 +219,7 @@
         combo_tilde {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp TILDE>;
-            key-positions = <11 21>;
+            key-positions = <24 23>;
             layers = <BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -599,10 +599,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &hml DOUBLE_QUOTES Q  &hml GRAVE W         &kp E             &kp R                &kp T            &kp Y               &hmr UNDER U   &kp I           &hmr SEMICOLON O   &kp P
-  &hml LEFT_SHIFT A     &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml LEFT_COMMAND F  &hml AT G        &kp H               &hmr RCMD J    &hmr RALT K     &hmr RSHFT L       &kp RETURN
-  &kp Z                 &kp X                &kp C             &kp V                &kp B            &hmr EXCLAMATION N  &hmr COLON M   &hmr SQT COMMA  &hmr QUESTION DOT  &kp SLASH
-  &kp LEFT_SHIFT        &kp LCTRL            &kp LEFT_COMMAND  &lt NUM TAB          &lt NAV SPACE    &kp BACKSPACE       &lt SYM SPACE  &mo FUN         &kp RIGHT_ALT      &kp RIGHT_SHIFT
+  &kp Q              &kp W                &kp E             &kp R                &kp T            &kp Y          &kp U          &kp I           &kp O              &kp P
+  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D   &hml LEFT_COMMAND F  &kp G            &kp H          &hmr RCMD J    &hmr RALT K     &hmr RSHFT L       &kp RETURN
+  &kp Z              &kp X                &kp C             &kp V                &kp B            &kp N          &kp M          &hmr SQT COMMA  &hmr QUESTION DOT  &kp SLASH
+  &kp LEFT_SHIFT     &kp LCTRL            &kp LEFT_COMMAND  &lt NUM TAB          &lt NAV SPACE    &kp BACKSPACE  &lt SYM SPACE  &mo FUN         &kp RIGHT_ALT      &kp RIGHT_SHIFT
             >;
         };
 
