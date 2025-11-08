@@ -2,7 +2,16 @@ layout: {zmk_keyboard: anywhy_flake}
 layers:
   BASE:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - [A, S, D, F, G, H, J, K, L, RETURN]
+  - - {t: A, h: LSHFT}
+    - {t: S, h: LCTRL}
+    - {t: D, h: LALT}
+    - {t: F, h: LCMD}
+    - G
+    - H
+    - {t: J, h: RCMD}
+    - {t: K, h: RALT}
+    - {t: L, h: RSHFT}
+    - RETURN
   - - Z
     - X
     - C
@@ -13,7 +22,7 @@ layers:
     - {t: ',', h: ''''}
     - {t: ., h: '?'}
     - /
-  - - LEFT ALT
+  - - LCTRL
     - LGUI
     - {t: DELETE, h: LSHFT}
     - {t: TAB, h: NAV}
@@ -24,38 +33,47 @@ layers:
     - RIGHT ALT
     - RIGHT SHIFT
   NUM:
-  - ['', F9, F10, F11, F12, '', '7', '8', '9', '']
-  - ['', F5, F6, F7, F8, '%', '4', '5', '6', '0']
+  - ['', F9, F10, F11, F12, '`', '7', '8', '9', '']
+  - - LSHFT
+    - {t: F5, h: LCTRL}
+    - {t: F6, h: LALT}
+    - {t: F7, h: LCMD}
+    - F8
+    - '-'
+    - {t: '4', h: RCMD}
+    - {t: '5', h: RALT}
+    - {t: '6', h: RSHFT}
+    - '0'
   - ['', F1, F2, F3, F4, '=', '1', '2', '3', .]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BACKSPACE
-    - LEFT SHIFT
+    - LSHFT
     - {type: held}
+    - BACKSPACE
     - Ctl+SPACE
-    - Gui+SPACE
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   NAV:
-  - ['', '', '', '', '', '', Ctl+UP ARROW, '', Gui+TAB, '']
-  - - {t: LEFT SHIFT, h: sticky}
-    - {t: LEFT CONTROL, h: sticky}
+  - ['', '', '', '', '', '', HOME, '', END, '']
+  - - {t: LSHFT, h: sticky}
+    - {t: LCTRL, h: sticky}
     - {t: LEFT ALT, h: sticky}
-    - {t: LEFT COMMAND, h: sticky}
+    - {t: LCMD, h: sticky}
     - Ctl+UP ARROW
     - PG UP
     - LEFT
     - UP
     - RIGHT
-    - NEXT
+    - {t: ▽, type: trans}
   - ['', Ctl+LEFT, Ctl+RIGHT, F11, Ctl+DOWN, PAGE DOWN, TAB, DOWN ARROW, TAB, '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - LEFT SHIFT
+    - LSHFT
     - {type: held}
     - LEFT ALT
-    - DELETE
+    - {t: ▽, type: trans}
     - RGUI
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
