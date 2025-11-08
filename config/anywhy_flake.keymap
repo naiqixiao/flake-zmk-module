@@ -297,7 +297,7 @@
 
         combo_under {
             timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp MINUS>;
             key-positions = <25 26>;
             layers = <0>;
             require-prior-idle-ms = <80>;
