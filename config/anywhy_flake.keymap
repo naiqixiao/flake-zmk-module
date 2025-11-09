@@ -598,7 +598,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMAQ";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <250>;
             bindings = <&kp COMMA>, <&kp SQT>;
         };
 
@@ -606,7 +606,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PERIODQUESTION";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <300>;
             bindings = <&kp DOT>, <&kp QUESTION>;
         };
     };
