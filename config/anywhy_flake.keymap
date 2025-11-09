@@ -621,7 +621,7 @@
             bindings = <
   &kp Q         &kp W         &kp E              &kp R        &kp T            &kp Y            &kp U          &kp I                 &kp O               &kp P
   &hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LCMD F  &kp G            &kp H            &hmr RCMD J    &hmr RALT K           &hmr RSHFT L        &kp RETURN
-  &kp Z         &kp X         &kp C              &kp V        &kp B            &kp N            &kp M          &td_commaQ COMMA SQT  &td_periodQuestion  &kp SLASH
+  &kp Z         &kp X         &kp C              &kp V        &kp B            &kp N            &kp M          &td_commaQ   &td_periodQuestion  &kp SLASH
   &kp LCTRL     &kp LGUI      &hml LSHFT DELETE  &lt NUM TAB  &lt NAV SPACE    &lt 3 BACKSPACE  &lt SYM SPACE  &hmr RSHFT TAB        &kp RIGHT_ALT       &kp RIGHT_SHIFT
             >;
         };
