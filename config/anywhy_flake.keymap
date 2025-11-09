@@ -619,10 +619,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q         &kp W         &kp E              &kp R        &kp T            &kp Y            &kp U          &kp I                 &kp O               &kp P
-  &kp A             &kp S     &kp D              &kp F        &kp G            &kp H            &kp J          &kp K                 &kp L    &kp RETURN
-  &kp Z         &kp X         &kp C              &kp V        &kp B            &kp N            &kp M          &td_commaQ   &td_periodQuestion  &kp SLASH
-  &kp LCTRL     &kp LGUI      &hml LSHFT DELETE  &lt NUM TAB  &lt NAV SPACE    &lt 3 BACKSPACE  &lt SYM SPACE  &hmr RSHFT TAB        &kp RIGHT_ALT       &kp RIGHT_SHIFT
+  &kp Q      &kp W     &kp E              &kp R        &kp T            &kp Y            &kp U        &kp I           &kp O               &kp P
+  &kp A      &kp S     &kp D              &kp F        &kp G            &kp H            &kp J        &kp K           &kp L               &kp RETURN
+  &kp Z      &kp X     &kp C              &kp V        &kp B            &kp N            &kp M        &td_commaQ      &td_periodQuestion  &kp SLASH
+  &kp LCTRL  &kp LGUI  &hml LSHFT DELETE  &lt NUM TAB  &lt NAV SPACE    &lt 4 BACKSPACE  &lt 3 SPACE  &hmr RSHFT TAB  &kp RIGHT_ALT       &kp RIGHT_SHIFT
             >;
         };
 
@@ -631,10 +631,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-  &none      &kp F9         &kp F10        &kp F11       &kp F12    &kp GRAVE      &kp N7         &kp N8        &kp N9         &none
-  &none   &kp F5  &kp F6         &kp F7          &kp F8     &kp MINUS      &kp N4         &kp N5  &kp N6  &kp N0
-  &none      &kp F1         &kp F2         &kp F3        &kp F4     &kp EQUAL      &kp N1         &kp N2        &kp N3         &kp DOT
-  &trans     &trans         &kp BACKSPACE  &kp LSHFT     &none      &kp BACKSPACE  &kp RC(SPACE)  &trans        &trans         &trans
+  &none   &kp F9  &kp F10        &kp F11    &kp F12    &kp GRAVE      &kp N7         &kp N8  &kp N9  &none
+  &none   &kp F5  &kp F6         &kp F7     &kp F8     &kp MINUS      &kp N4         &kp N5  &kp N6  &kp N0
+  &none   &kp F1  &kp F2         &kp F3     &kp F4     &kp EQUAL      &kp N1         &kp N2  &kp N3  &kp DOT
+  &trans  &trans  &kp BACKSPACE  &kp LSHFT  &none      &kp BACKSPACE  &kp RC(SPACE)  &trans  &trans  &trans
             >;
         };
 
@@ -667,10 +667,10 @@
         sym_layer {
             label = "SYM";
             bindings = <
-  &none   &kp AMPS   &kp ASTRK  &kp LBRC   &kp RBRC     &none      &kp N7       &kp N8    &kp N9  &none
-  &none   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS   &kp PERCENT  &kp N4    &kp N5  &kp N6
-  &none   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE   &kp C_MUTE   &kp C_PP  &kp N0  &kp N1
-  &trans  &trans     &trans     &kp LPAR   &kp RPAR     &kp SPACE  &none        &none     &trans  &trans
+  &none   &kp AMPS   &kp ASTRK  &kp LBRC   &kp RBRC     &none     &kp N7       &kp N8    &kp N9  &none
+  &none   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS  &kp PERCENT  &kp N4    &kp N5  &kp N6
+  &none   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE  &kp C_MUTE   &kp C_PP  &kp N0  &kp N1
+  &trans  &trans     &trans     &kp LPAR   &kp RPAR     &none     &trans       &none     &trans  &trans
             >;
         };
     };
