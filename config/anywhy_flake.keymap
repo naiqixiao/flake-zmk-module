@@ -59,14 +59,19 @@
 #define RH2 37
 #define RH3 38
 #define RH4 39
+
+
 #define XXX &none
 #define TODO ___
 #define ___ &trans
+
+
 #define BASE 0
 #define NAV 1
 #define NUM 2
 #define FUN 3
 #define SYM 4
+#define QWERT 5
 
 /* ------------------------ general config ----------------------- */
 
@@ -126,7 +131,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EXCL>;
             key-positions = <13 12>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -134,7 +139,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AT>;
             key-positions = <12 11>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -142,7 +147,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp HASH>;
             key-positions = <2 1>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -150,7 +155,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp DLLR>;
             key-positions = <3 2>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -158,7 +163,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PRCNT>;
             key-positions = <4 14>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -166,7 +171,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <13 14>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -174,7 +179,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp SQT>;
             key-positions = <13 23>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -184,7 +189,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp GRAVE>;
             key-positions = <11 21>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -192,7 +197,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp BSLH>;
             key-positions = <12 22>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -200,7 +205,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EQUAL>;
             key-positions = <4 3>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -208,7 +213,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp TILDE>;
             key-positions = <24 23>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -218,7 +223,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(X)>;
             key-positions = <21 23>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -226,7 +231,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(V)>;
             key-positions = <23 22>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -234,7 +239,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(C)>;
             key-positions = <21 22>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -242,7 +247,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LG(Z)>;
             key-positions = <20 21>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -253,7 +258,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp CARET>;
             key-positions = <5 15>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -277,7 +282,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AMPS>;
             key-positions = <15 16>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -287,7 +292,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp MINUS>;
             key-positions = <25 26>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -311,7 +316,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PIPE>;
             key-positions = <5 6>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -321,7 +326,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBKT>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -329,7 +334,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -337,7 +342,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LPAR>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -345,7 +350,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RPAR>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -353,7 +358,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp LBRC>;
             key-positions = <26 27>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -361,7 +366,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp RBRC>;
             key-positions = <27 28>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -377,7 +382,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp SEMI>;
             key-positions = <17 27>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -385,7 +390,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp COLON>;
             key-positions = <16 26>;
-            layers = <0>;
+            layers = <QWERT BASE>;
             require-prior-idle-ms = <80>;
         };
 
@@ -403,7 +408,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp ESC>;
             key-positions = <1 0>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -411,7 +416,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp CAPS>;
             key-positions = <11 10>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
@@ -421,7 +426,7 @@
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&caps_word>;
             key-positions = <13 16>;
-            layers = <BASE NAV NUM>;
+            layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
     };
@@ -636,6 +641,18 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+        QWERT_layer {
+            label = "QWERT";
+            bindings = <
+  &kp Q      &kp W     &kp E              &kp R        &kp T            &kp Y          &kp U        &kp I           &kp O               &kp P
+  &hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LCMD F  &kp G            &kp H            &hmr RCMD J    &hmr RALT K           &hmr RSHFT L        &kp RETURN
+  &kp Z      &kp X     &kp C              &kp V        &kp B            &kp N          &kp M        &td_commaQ      &td_periodQuestion  &kp SLASH
+  &kp LCTRL     &kp LGUI      &hml LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 3 SPACE  &kp RETURN   &kp RIGHT_ALT       &kp RIGHT_SHIFT
+            >;
+        };
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
         num_layer {
             label = "NUM";
             bindings = <
@@ -665,7 +682,7 @@
             bindings = <
   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4     &none  &none              &none             &none            &bt BT_CLR
   &none         &bt BT_NXT    &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none
-  &bt BT_CLR    &bt BT_PRV    &none           &none           &none            &none  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none
+  &bt BT_CLR    &bt BT_PRV    &none           &none           &tog QWERT            &none  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none
   &trans        &trans        &trans          &trans          &trans           &none  &none              &none             &none            &none
             >;
         };
