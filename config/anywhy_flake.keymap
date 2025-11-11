@@ -641,18 +641,6 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        QWERT_layer {
-            label = "QWERT";
-            bindings = <
-  &kp Q      &kp W     &kp E              &kp R        &kp T            &kp Y          &kp U        &kp I           &kp O               &kp P
-  &hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LCMD F  &kp G            &kp H            &hmr RCMD J    &hmr RALT K           &hmr RSHFT L        &kp RETURN
-  &kp Z      &kp X     &kp C              &kp V        &kp B            &kp N          &kp M        &td_commaQ      &td_periodQuestion  &kp SLASH
-  &kp LCTRL     &kp LGUI      &hml LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 3 SPACE  &kp RETURN   &kp RIGHT_ALT       &kp RIGHT_SHIFT
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         num_layer {
             label = "NUM";
             bindings = <
@@ -696,6 +684,18 @@
   &none   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS  &kp PERCENT  &kp N4    &kp N5  &kp N6
   &none   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE  &kp C_MUTE   &kp C_PP  &kp N0  &kp N1
   &trans  &trans     &trans     &kp LPAR   &kp RPAR     &none     &trans       &none     &trans  &trans
+            >;
+        };
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+        QWERT_layer {
+            label = "QWERT";
+            bindings = <
+  &kp Q      &kp W     &kp E              &kp R        &kp T            &kp Y          &kp U        &kp I           &kp O               &kp P
+  &hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LCMD F  &kp G            &kp H            &hmr RCMD J    &hmr RALT K           &hmr RSHFT L        &td_quotColon
+  &kp Z      &kp X     &kp C              &kp V        &kp B            &kp N          &kp M        &kp COMMA      &td_periodQuestion  &kp SLASH
+  &kp LCTRL     &kp LGUI      &hml LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 3 SPACE  &kp RETURN   &kp RIGHT_ALT       &kp RIGHT_SHIFT
             >;
         };
     };
