@@ -128,7 +128,7 @@
         combo_excl {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp EXCL>;
-            key-positions = <13 12>;
+            key-positions = <15 16>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -136,7 +136,7 @@
         combo_at {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp AT>;
-            key-positions = <12 11>;
+            key-positions = <14 15>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
@@ -144,7 +144,7 @@
         combo_hash {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp HASH>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
