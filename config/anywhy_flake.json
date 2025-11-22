@@ -1,10 +1,10 @@
 {
     "id": "anywhy_flake",
-    "name": "Anywhy Flake",
+    "name": "Wide 36",
     "layouts": {
       
       "small_layout": {
-        "name": "Anywhy Flake S layout",
+        "name": "Wide 36 S layout",
         "layout": [
           { "row": 1, "col":  0, "x":  0, "y": 0.75 },
           { "row": 1, "col":  1, "x":  1, "y": 0.75 },
