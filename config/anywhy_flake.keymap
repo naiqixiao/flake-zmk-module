@@ -630,10 +630,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&none      &kp Q        &kp W         &kp F        &kp P          &kp B          &kp J          &kp L        &kp U        &kp Y               &td_quotColon  &none
-&kp LSHFT  &hml LCMD A  &hml LCTRL R  &hml LALT S  &hml LSHFT T   &kp G          &kp M          &hmr RCMD N  &hmr RALT E  &hmr RSHFT I        &kp O          &kp RETURN
-&none      &kp Z        &kp X         &kp C        &kp D          &kp V          &kp K          &kp H        &td_commaQ   &td_periodQuestion  &kp SLASH      &none
-           &none        &none         &none        &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 4 SPACE  &none        &none               &none
+&none           &kp Q         &kp W         &kp F        &kp P          &kp B          &kp J          &kp L        &kp U        &kp Y               &td_quotColon  &none
+&kp LCMD  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml  T LEFT_SHIFT   &kp G          &kp M          &hmr RCMD N  &hmr RALT E  &hmr RSHFT I        &kp O          &kp RETURN
+&none           &kp Z         &kp X         &kp C        &kp D          &kp V          &kp K          &kp H        &td_commaQ   &td_periodQuestion  &kp SLASH      &none
+                &none         &none         &none        &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 4 SPACE  &none        &none               &none
             >;
         };
 
@@ -642,10 +642,10 @@
         QWERT_layer {
             label = "QWERT";
             bindings = <
-&none   &kp Q        &kp W         &kp E         &kp R         &kp T     &kp Y   &kp U        &kp I        &kp O               &kp P          &none
-&trans  &hml LCMD A  &hml LCTRL S  &hml LALT D   &hml LSHFT F  &kp G     &kp H   &hmr RCMD J  &hmr RALT K  &hmr RSHFT L        &td_quotColon  &trans
-&none   &kp Z        &kp X         &kp C         &kp V         &kp B     &kp N   &kp M        &td_commaQ   &td_periodQuestion  &trans         &none
-        &none        &none         &none DELETE  &trans        &trans    &trans  &trans       &trans       &none               &none
+&none   &kp Q         &kp W         &kp E              &kp R        &kp T     &kp Y   &kp U        &kp I         &kp O               &kp P            &none
+&trans  &hml LCMD A  &hml LCTRL S  &hml LALT D        &hml LEFT_SHIFT F  &kp G     &kp H   &hmr RCMD J  &hmr RALT K   &hmr RSHFT L        &td_quotColon    &trans
+&none   &kp Z         &kp X         &kp C              &kp V        &kp B     &kp N   &kp M        &td_commaQ    &td_periodQuestion  &trans           &none
+        &none      &none      &none  DELETE  &trans       &trans    &trans  &trans       &trans  &none        &none 
             >;
         };
 
@@ -654,10 +654,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-&none   &none     &kp F9         &kp F10        &kp F11        &kp F12    &kp GRAVE      &kp N7         &kp N8        &kp N9         &none    &none
+&none   &none      &kp F9         &kp F10        &kp F11       &kp F12    &kp GRAVE      &kp N7         &kp N8        &kp N9         &none    &none
 &trans  &kp LCMD  &hml LCTRL F5  &hml LALT F6   &hml LSHFT F7  &kp F8     &kp MINUS      &hmr RCMD N4   &hmr RALT N5  &hmr RSHFT N6  &kp N0   &trans
-&none   &none     &kp F1         &kp F2         &kp F3         &kp F4     &kp EQUAL      &kp N1         &kp N2        &kp N3         &kp DOT  &none
-        &trans    &trans         &kp BACKSPACE  &kp LSHFT      &none      &kp BACKSPACE  &kp RC(SPACE)  &trans        &trans         &trans
+&none   &none      &kp F1         &kp F2         &kp F3        &kp F4     &kp EQUAL      &kp N1         &kp N2        &kp N3         &kp DOT  &none
+        &trans     &trans         &kp BACKSPACE  &kp LSHFT     &none      &kp BACKSPACE  &kp RC(SPACE)  &trans        &trans         &trans
             >;
         };
 
@@ -666,10 +666,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&none   &none     &none         &none          &none       &none               &none          &kp HOME  &none           &kp END    &none   &none
-&trans  &sk LCMD  &sk LCTRL     &sk LALT       &sk LSHIFT  &kp LC(UP_ARROW)    &kp PG_UP      &kp LEFT  &kp UP          &kp RIGHT  &trans  &none
-&none   &none     &kp LC(LEFT)  &kp LC(RIGHT)  &kp F11     &kp LC(DOWN)        &kp PAGE_DOWN  &kp TAB   &kp DOWN_ARROW  &kp TAB    &none   &none
-        &trans    &trans        &kp LSHFT      &none       &kp LALT            &trans         &kp RGUI  &trans          &trans     &trans
+&none   &none      &none         &none          &none     &none               &none          &kp HOME  &none           &kp END    &none   &none
+&trans  &sk LCMD  &sk LCTRL     &sk LEFT_ALT   &sk LSHFT  &kp LC(UP_ARROW)    &kp PG_UP      &kp LEFT  &kp UP          &kp RIGHT  &trans  &none
+&none   &none      &kp LC(LEFT)  &kp LC(RIGHT)  &kp F11   &kp LC(DOWN)        &kp PAGE_DOWN  &kp TAB   &kp DOWN_ARROW  &kp TAB    &none   &none
+        &trans     &trans        &kp LSHFT      &none     &kp LEFT_ALT        &trans         &kp RGUI  &trans          &trans     &trans
             >;
         };
 
@@ -697,4 +697,5 @@
             >;
         };
     };
+};
 };
