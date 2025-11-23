@@ -630,10 +630,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-&none       &kp Q        &kp W         &kp F        &kp P          &kp B          &kp J          &kp L        &kp U        &kp Y               &td_quotColon  &none
-&kp DELETE  &hml LCMD A  &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E  &hmr RSHFT I        &kp O          &kp RETURN
-&none       &kp Z        &kp X         &kp C        &kp D          &kp V          &kp K          &kp H        &td_commaQ   &td_periodQuestion  &kp SLASH      &none
-            &none        &none         &none        &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 4 SPACE  &none        &none               &none
+&none       &kp Q        &kp W         &kp F        &kp P          &kp B          &kp J            &kp L        &kp U        &kp Y               &td_quotColon  &none
+&kp DELETE  &hml LCMD A  &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &kp G          &kp M            &hmr RCMD N  &hmr RALT E  &hmr RSHFT I        &kp O          &kp RETURN
+&none       &kp Z        &kp X         &kp C        &kp D          &kp V          &kp K            &kp H        &td_commaQ   &td_periodQuestion  &kp SLASH      &none
+            &none        &none         &none        &lt NUM SPACE  &lt NAV TAB    &lt 4 BACKSPACE  &kp SPACE    &none        &none               &none
             >;
         };
 
