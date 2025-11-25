@@ -572,7 +572,7 @@
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <220>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;  // optional bump so rapid re-presses default to hold
@@ -585,7 +585,7 @@
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <280>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <QUICK_TAP_MS>;
             require-prior-idle-ms = <150>;  // optional bump so rapid re-presses default to hold
