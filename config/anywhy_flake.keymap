@@ -595,6 +595,27 @@
             hold-trigger-on-release;        // force hold as soon as a right-hand key is released
         };
 
+        /*
+        * Non-Positional Homerow Mods
+        * Used for &mm_grescm_gui behavior on left hand.
+        *
+        * Usage: &hm LSHFT T
+        * Tap: T
+        * Tap-Tap-Hold: Repeat T
+        * Hold: LSHIFT
+        */
+        tm: thumb_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_MODS";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            retro-tap; // use tap when key is used without another key
+        };
+
         td_commaQ: td_commaQ {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMAQ";
