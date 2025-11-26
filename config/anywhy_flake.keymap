@@ -103,7 +103,8 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <175>;
+    retro-tap;
 };
 
 #define KEYS_L 0  1  2  3  4  5  12 13 14 15 16 17 24 25 26 27 28 29   // left hand
@@ -580,7 +581,7 @@
             quick-tap-ms = <QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 44 45 36 37 38 39 40>;
             hold-trigger-on-release;
         };
 
@@ -593,7 +594,7 @@
             require-prior-idle-ms = <125>;  // Reduced from 125ms - less bias toward hold
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 43 44 45>;
             hold-trigger-on-release;
         };
 
