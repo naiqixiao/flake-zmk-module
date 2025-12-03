@@ -99,7 +99,6 @@
 };
 
 // default layer-tap config
-
 /* &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -422,7 +421,7 @@
         // caps word on index fingers
 
         combo_capsw {
-            timeout-ms = <COMBO_TERM_FAST>;
+            timeout-ms = <90>;
             bindings = <&caps_word>;
             key-positions = <16 19>;
             layers = <QWERT BASE NAV NUM>;
