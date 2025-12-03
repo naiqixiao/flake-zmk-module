@@ -577,7 +577,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
             quick-tap-ms = <QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
 
@@ -591,7 +591,7 @@
             flavor = "balanced";
             tapping-term-ms = <250>;  // Increased from 280ms - more time to release for tap
             quick-tap-ms = <QUICK_TAP_MS>;
-            require-prior-idle-ms = <125>;  // Reduced from 125ms - less bias toward hold
+            require-prior-idle-ms = <100>;  // Reduced from 125ms - less bias toward hold
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 43 44 45>;
