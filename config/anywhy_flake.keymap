@@ -588,7 +588,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <25>;  // Increased from 280ms - more time to release for tap
+            tapping-term-ms = <225>;  // Increased from 280ms - more time to release for tap
             quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;  // Reduced from 125ms - less bias toward hold
             bindings = <&kp>, <&kp>;
