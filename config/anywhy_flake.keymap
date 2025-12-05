@@ -575,12 +575,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <225>;
             require-prior-idle-ms = <100>;
-            quick-tap-ms = <QUICK_TAP_MS>;
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 44 45 36 37 38 39 40>;
+            hold-trigger-key-positions = 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 44 45 36 37 38 39 40>;
             hold-trigger-on-release;
         };
 
@@ -588,12 +588,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;  // Increased from 280ms - more time to release for tap
-            quick-tap-ms = <QUICK_TAP_MS>;
+            tapping-term-ms = <25>;  // Increased from 280ms - more time to release for tap
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;  // Reduced from 125ms - less bias toward hold
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L THUMBS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 43 44 45>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 43 44 45>;
             hold-trigger-on-release;
         };
 
@@ -633,7 +633,7 @@
 &none       &kp Q        &kp W         &kp F        &kp P          &kp B          &kp J            &kp L        &kp U        &kp Y               &td_quotColon  &none
 &kp DELETE  &hml LCMD A  &hml LCTRL R  &hml LALT S  &hml LSHIFT T  &kp G          &kp M            &hmr RCMD N  &hmr RALT E  &hmr RSHFT I        &kp O          &kp RETURN
 &none       &kp Z        &kp X         &kp C        &kp D          &kp V          &kp K            &kp H        &td_commaQ   &td_periodQuestion  &kp SLASH      &none
-            &none        &none         &none        &lt NUM SPACE  &lt NAV TAB    &lt 4 BACKSPACE  &kp SPACE    &none        &none               &none
+            &none        &none         &none        &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE    &lt 4 SPACE  &none        &none               &none
             >;
         };
 
