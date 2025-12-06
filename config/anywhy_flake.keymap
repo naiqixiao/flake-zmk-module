@@ -592,7 +592,7 @@
             require-prior-idle-ms = <100>;  // optional bump so rapid re-presses default to hold
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <35 37 36 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34>;
+            hold-trigger-key-positions = <35 37 36 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34 32>;
             hold-trigger-on-release;        // force hold as soon as a right-hand key is released
         };
 
@@ -651,10 +651,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F             &kp P          &kp B          &kp J            &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S       &hml LSHIFT T  &kp G          &kp M            &hmr RCMD N  &hmr RALT E      &hmr RSHFT I        &kp O
-  &kp Z        &kp X         &kp C             &kp D          &kp V          &kp K            &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
-  &none        &none         &tm LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE    &lt 4 SPACE    &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F             &kp P          &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S       &hml LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr RSHFT I        &kp O
+  &kp Z        &kp X         &kp C             &kp D          &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
+  &none        &none         &tm LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &lt 4 SPACE  &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
