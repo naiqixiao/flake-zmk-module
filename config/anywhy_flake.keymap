@@ -574,12 +574,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;        // optional tighter term so holds trigger sooner
-            quick-tap-ms = <QUICK_TAP_MS>;
+            tapping-term-ms = <210>;        // optional tighter term so holds trigger sooner
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;  // optional bump so rapid re-presses default to hold
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS 5 6 7 8 9 19 29 28 27 17 18 26 16 15 25 35 36 37 32 33 34>;
+            hold-trigger-key-positions = <5 6 7 8 9 19 29 28 27 17 18 26 16 15 25 35 36 37 32 33 34>;
             hold-trigger-on-release;        // force hold as soon as a right-hand key is released
         };
 
@@ -587,12 +587,12 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;        // optional tighter term so holds trigger sooner
-            quick-tap-ms = <QUICK_TAP_MS>;
+            tapping-term-ms = <210>;        // optional tighter term so holds trigger sooner
+            quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;  // optional bump so rapid re-presses default to hold
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L THUMBS 35 37 36 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34>;
+            hold-trigger-key-positions = <35 37 36 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34>;
             hold-trigger-on-release;        // force hold as soon as a right-hand key is released
         };
 
@@ -654,7 +654,7 @@
   &kp Q        &kp W         &kp F             &kp P          &kp B          &kp J            &kp L        &kp U            &kp Y               &td_quotColon
   &hml LCMD A  &hml LCTRL R  &hml LALT S       &hml LSHIFT T  &kp G          &kp M            &hmr RCMD N  &hmr RALT E      &hmr RSHFT I        &kp O
   &kp Z        &kp X         &kp C             &kp D          &kp V          &kp K            &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
-  &none        &none         &tm LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &lt 4 BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
+  &none        &none         &tm LSHFT DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE    &lt 4 SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
