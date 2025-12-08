@@ -100,8 +100,8 @@
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
+    tapping-term-ms = <120>;
+    quick-tap-ms = <100>;
     retro-tap;
 };
 
@@ -651,10 +651,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F             &kp P          &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S       &hml LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr RSHFT I        &kp O
-  &kp Z        &kp X         &kp C             &kp D          &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
-  &none        &none         &lt 4 DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &kp 4 SPACE  &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F         &kp P          &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr RSHFT I        &kp O
+  &kp Z        &kp X         &kp C         &kp D          &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
+  &none        &none         &lt 4 DELETE  &lt NUM SPACE  &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
