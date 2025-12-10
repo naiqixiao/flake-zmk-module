@@ -427,13 +427,6 @@
             require-prior-idle-ms = <80>;
         };
 
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <34 35>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <80>;
-            layers = <0 2>;
-        };
     };
 
     macros {
