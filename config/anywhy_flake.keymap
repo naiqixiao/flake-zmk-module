@@ -422,11 +422,18 @@
         combo_capsw {
             timeout-ms = <90>;
             bindings = <&caps_word>;
-            key-positions = <13 16>;
+            key-positions = <23 26>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
         };
 
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <4 5>;
+            timeout-ms = <90>;
+            require-prior-idle-ms = <80>;
+            layers = <0 2>;
+        };
     };
 
     macros {
