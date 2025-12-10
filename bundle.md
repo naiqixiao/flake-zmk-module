@@ -1392,7 +1392,7 @@ id: anywhy_flake
 name: Anywhy Flake
 type: shield
 url: https://github.com/anywhy-io/flake
-requires: [seeeduino_xiao_ble]
+requires: [xiao_ble]
 features:
   - keys
   - studio
@@ -1445,12 +1445,12 @@ siblings:
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: anywhy_flake_left
     snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: anywhy_flake_right
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
 ```
 
