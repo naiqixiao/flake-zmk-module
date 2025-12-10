@@ -427,9 +427,17 @@
             require-prior-idle-ms = <80>;
         };
 
-        bootloader {
+        bootloader_l {
             bindings = <&bootloader>;
-            key-positions = <20 29>;
+            key-positions = <20 24>;
+            timeout-ms = <90>;
+            require-prior-idle-ms = <80>;
+            layers = <0 2>;
+        };
+
+        bootloader_r {
+            bindings = <&bootloader>;
+            key-positions = <25 29>;
             timeout-ms = <90>;
             require-prior-idle-ms = <80>;
             layers = <0 2>;
