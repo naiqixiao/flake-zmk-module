@@ -409,14 +409,6 @@
             require-prior-idle-ms = <80>;
         };
 
-        combo_caps {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp CAPS>;
-            key-positions = <11 10>;
-            layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <80>;
-        };
-
         // caps word on index fingers
 
         combo_capsw {
@@ -425,22 +417,6 @@
             key-positions = <23 26>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <80>;
-        };
-
-        bootloader_l {
-            bindings = <&bootloader>;
-            key-positions = <20 24>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <80>;
-            layers = <0 2>;
-        };
-
-        bootloader_r {
-            bindings = <&bootloader>;
-            key-positions = <25 29>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <80>;
-            layers = <0 2>;
         };
     };
 
