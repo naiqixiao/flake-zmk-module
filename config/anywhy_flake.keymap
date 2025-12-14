@@ -113,7 +113,7 @@
 
 #undef COMBO_HOOK
 
-#define COMBO_HOOK 80;
+#define COMBO_TERM_IDLE 80
 #define COMBO_TERM_FAST 25
 #define COMBO_TERM_SLOW 40
 
@@ -129,7 +129,7 @@
             bindings = <&kp EXCL>;
             key-positions = <13 12>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -138,7 +138,7 @@
             bindings = <&kp AT>;
             key-positions = <12 11>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -147,7 +147,7 @@
             bindings = <&kp HASH>;
             key-positions = <2 1>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -156,7 +156,7 @@
             bindings = <&kp DLLR>;
             key-positions = <3 2>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -165,7 +165,7 @@
             bindings = <&kp PRCNT>;
             key-positions = <4 14>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -174,7 +174,7 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <13 14>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -183,7 +183,7 @@
             bindings = <&kp SQT>;
             key-positions = <13 23>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -194,7 +194,7 @@
             bindings = <&kp GRAVE>;
             key-positions = <11 21>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -203,7 +203,7 @@
             bindings = <&kp BSLH>;
             key-positions = <12 22>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -212,7 +212,7 @@
             bindings = <&kp EQUAL>;
             key-positions = <4 3>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -221,7 +221,7 @@
             bindings = <&kp TILDE>;
             key-positions = <24 23>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -232,7 +232,7 @@
             bindings = <&kp LG(X)>;
             key-positions = <21 23>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -241,7 +241,7 @@
             bindings = <&kp LG(V)>;
             key-positions = <23 22>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -250,7 +250,7 @@
             bindings = <&kp LG(C)>;
             key-positions = <21 22>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -259,7 +259,7 @@
             bindings = <&kp LG(Z)>;
             key-positions = <20 21>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -271,7 +271,7 @@
             bindings = <&kp CARET>;
             key-positions = <5 15>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -280,7 +280,7 @@
             bindings = <&kp PLUS>;
             key-positions = <16 17>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -289,7 +289,7 @@
             bindings = <&kp STAR>;
             key-positions = <26 27>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -298,7 +298,7 @@
             bindings = <&kp AMPS>;
             key-positions = <15 16>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -309,7 +309,7 @@
             bindings = <&kp MINUS>;
             key-positions = <25 26>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -318,7 +318,7 @@
             bindings = <&kp MINUS>;
             key-positions = <17 18>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -327,7 +327,7 @@
             bindings = <&kp FSLH>;
             key-positions = <27 28>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -336,7 +336,7 @@
             bindings = <&kp PIPE>;
             key-positions = <5 6>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -347,7 +347,7 @@
             bindings = <&kp LBKT>;
             key-positions = <6 7>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -356,7 +356,7 @@
             bindings = <&kp RBKT>;
             key-positions = <7 8>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -365,7 +365,7 @@
             bindings = <&kp LPAR>;
             key-positions = <16 17>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -374,7 +374,7 @@
             bindings = <&kp RPAR>;
             key-positions = <17 18>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -383,7 +383,7 @@
             bindings = <&kp LBRC>;
             key-positions = <26 27>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -392,7 +392,7 @@
             bindings = <&kp RBRC>;
             key-positions = <27 28>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -401,7 +401,7 @@
             bindings = <&kp LT>;
             key-positions = <15 16>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -410,7 +410,7 @@
             bindings = <&kp SEMI>;
             key-positions = <17 27>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -419,7 +419,7 @@
             bindings = <&kp COLON>;
             key-positions = <16 26>;
             layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -428,7 +428,7 @@
             bindings = <&kp GT>;
             key-positions = <18 19>;
             layers = <2>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -439,7 +439,7 @@
             bindings = <&kp ESC>;
             key-positions = <1 0>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
 
@@ -450,7 +450,7 @@
             bindings = <&caps_word>;
             key-positions = <23 26>;
             layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_HOOK>;
+            require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
     };
