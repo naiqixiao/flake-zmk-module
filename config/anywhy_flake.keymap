@@ -714,7 +714,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_OSQT";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <140>;
             bindings = <&kp O>, <&kp SQT>;
         };
 
@@ -722,7 +722,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_GColon";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <140>;
             bindings = <&kp G>, <&kp COLON>;
         };
     };
