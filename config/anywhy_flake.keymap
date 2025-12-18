@@ -693,6 +693,14 @@
             tapping-term-ms = <220>;
             bindings = <&kp SQT>, <&kp COLON>;
         };
+
+        td_test: td_test {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_test";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -704,7 +712,7 @@
             label = "BASE";
             bindings = <
   &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &kp O
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &td_test O SQT
   &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
   &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
