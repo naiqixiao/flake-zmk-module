@@ -695,16 +695,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COMMAQ";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <220>;
             bindings = <&kp COMMA>, <&kp SQT>;
-        };
-
-        td_commaP: td_commaP {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_COMMAP";
-            #binding-cells = <0>;
-            tapping-term-ms = <280>;
-            bindings = <&kp COMMA>, <&kp DOT>;
         };
 
         td_periodQuestion: td_periodQuestion {
