@@ -180,7 +180,7 @@
         combo_squot {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp SQT>;
-            key-positions = <13 23>;
+            key-positions = <29 28>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -595,7 +595,8 @@
                 <&kp BACKSPACE>,
                 <&kp LA(BACKSPACE)>,
                 <&kp RG(BACKSPACE)>;
-       // 3 Taps: Clear Line Macro
+
+            // 3 Taps: Clear Line Macro
         };
 
         // hml hold-tap behavior logic documentation:
@@ -755,10 +756,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F         &kp P                &kp B                 &kp J             &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &hml_shift COLON G    &kp M             &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &hmr_shift SQT O
-  &kp Z        &kp X         &kp C         &kp D                &kp V                 &kp K             &kp H        &td_commaP       &td_SLASHQuestion   &kp RETURN
-  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB           &td_bs_word_line  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F         &kp P                &kp B                 &kp J          &kp L        &kp U            &kp Y               &td_quotColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &hml_shift COLON G    &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &hmr_shift SQT O
+  &kp Z        &kp X         &kp C         &kp D                &kp V                 &kp K          &kp H        &td_commaP       &td_SLASHQuestion   &kp RETURN
+  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB           &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
@@ -779,10 +780,10 @@
         num_layer {
             label = "NUM";
             bindings = <
-  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE         &kp N7         &kp N8        &kp N9               &none
-  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS         &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
-  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL         &kp N1         &kp N2        &kp N3               &kp DOT
-  &trans    &trans         &trans        &kp LSHFT             &none      &td_bs_word_line  &kp RC(SPACE)  &trans        &trans               &trans
+  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE  &kp N7         &kp N8        &kp N9               &none
+  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS  &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
+  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL  &kp N1         &kp N2        &kp N3               &kp DOT
+  &trans    &trans         &trans        &kp LSHFT             &none      &trans     &kp RC(SPACE)  &trans        &trans               &trans
             >;
         };
 
