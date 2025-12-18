@@ -678,12 +678,28 @@
             bindings = <&kp COMMA>, <&kp SLASH>;
         };
 
+        td_commaP: td_commaP {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&kp COMMA>, <&kp DOT>;
+        };
+
         td_periodQuestion: td_periodQuestion {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PERIODQUESTION";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp DOT>, <&kp QUESTION>;
+        };
+
+        td_SLASHQuestion: td_SLASHQuestion {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLASHQUESTION";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp SLASH>, <&kp QUESTION>;
         };
 
         td_quotColon: td_quotColon {
@@ -694,12 +710,20 @@
             bindings = <&kp SQT>, <&kp COLON>;
         };
 
-        td_test: td_test {
+        td_oSQT: td_oSQT {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_test";
+            label = "TD_OSQT";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp O>, <&kp SQT>;
+        };
+
+        td_gColon: td_gColon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GColon";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp G>, <&kp COLON>;
         };
     };
 
@@ -712,8 +736,8 @@
             label = "BASE";
             bindings = <
   &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &td_test O SQT
-  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &td_gColon          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  td_oSQT
+  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaP       &td_SLASHQuestion  &kp RETURN
   &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
