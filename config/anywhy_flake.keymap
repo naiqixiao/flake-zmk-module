@@ -491,13 +491,11 @@
         };
 
         // Macro to clear the entire line
+
         mc_clear_line: mc_clear_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp HOME>            // Move cursor to start of line
-                , <&kp LS(END)>         // Select to the end of the line
-                , <&kp BKSP>;           // Delete selection
+            bindings = <&kp HOME &kp LS(END) &kp BKSP>;           // Delete selection
         };
 
         macro_closetab: macro_closetab {
@@ -592,11 +590,12 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BS_WORD_LINE";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;    // Slightly longer to allow for 3 taps
-            bindings = 
-                <&kp BKSP>,             // 1 Tap: Backspace
-                <&kp LC(BKSP)>,         // 2 Taps: Delete Word (Use LA(BKSP) for Mac)
-                <&mc_clear_line>;       // 3 Taps: Clear Line Macro
+            tapping-term-ms = <190>;    // Slightly longer to allow for 3 taps
+            bindings =
+                <&kp BACKSPACE>,
+                <&kp LA(BACKSPACE)>,
+                <&kp RG(BACKSPACE)>;
+       // 3 Taps: Clear Line Macro
         };
 
         // hml hold-tap behavior logic documentation:
@@ -756,10 +755,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &hml_shift COLON G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &hmr_shift SQT O
-  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaP       &td_SLASHQuestion  &kp RETURN
-  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &td_bs_word_line  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F         &kp P                &kp B                 &kp J             &kp L        &kp U            &kp Y               &td_quotColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &hml_shift COLON G    &kp M             &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &hmr_shift SQT O
+  &kp Z        &kp X         &kp C         &kp D                &kp V                 &kp K             &kp H        &td_commaP       &td_SLASHQuestion   &kp RETURN
+  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB           &td_bs_word_line  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
@@ -780,9 +779,9 @@
         num_layer {
             label = "NUM";
             bindings = <
-  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE      &kp N7         &kp N8        &kp N9               &none
-  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS      &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
-  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL      &kp N1         &kp N2        &kp N3               &kp DOT
+  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE         &kp N7         &kp N8        &kp N9               &none
+  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS         &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
+  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL         &kp N1         &kp N2        &kp N3               &kp DOT
   &trans    &trans         &trans        &kp LSHFT             &none      &td_bs_word_line  &kp RC(SPACE)  &trans        &trans               &trans
             >;
         };
