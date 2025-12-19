@@ -761,7 +761,7 @@
             label = "QWERT";
             bindings = <
   &kp Q        &kp W         &kp E        &kp R                &kp T     &kp Y   &kp U        &kp I        &kp O               &kp P
-  &hml LCMD A  &hml LCTRL S  &hml LALT D  &hml_shift LSHIFT F  &kp G     &kp H   &hmr RCMD J  &hmr RALT K  &hmr_shift RSHFT L  &td_quotColon
+  &hml LCMD A  &hml LCTRL S  &hml LALT D  &hml_shift LSHIFT F  &kp G     &kp H   &hmr RCMD J  &hmr RALT K  &hmr_shift RSHFT L  &td_SLASHColon
   &kp Z        &kp X         &kp C        &kp V                &kp B     &kp N   &kp M        &td_commaQ   &td_periodQuestion  &kp RETURN
   &trans       &trans        &trans       &trans               &trans    &trans  &trans       &trans       &trans              &trans
             >;
