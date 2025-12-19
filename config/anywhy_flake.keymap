@@ -707,12 +707,12 @@
             bindings = <&kp DOT>, <&kp QUESTION>;
         };
 
-        td_SLASHQuestion: td_SLASHQuestion {
+        td_SLASHColon: td_SLASHColon {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SLASHQUESTION";
+            label = "TD_SLASHCOLON";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
-            bindings = <&kp SLASH>, <&kp QUESTION>;
+            bindings = <&kp SLASH>, <&kp COLON>;
         };
 
         td_quotColon: td_quotColon {
@@ -748,10 +748,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F         &kp P                &kp B                 &kp J          &kp L        &kp U            &kp Y               &td_quotColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &hml_shift COLON G    &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &hmr_shift SQT O
-  &kp Z        &kp X         &kp C         &kp D                &kp V                 &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RETURN
-  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB           &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U            &kp Y               &td_SLASHColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &kp O
+  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RET
+  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
             >;
         };
 
