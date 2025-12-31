@@ -453,7 +453,7 @@
             slow-release;
         };
 
-        bt_clr {
+        bt_clr_r {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <9 19 29>;
         };
@@ -461,6 +461,16 @@
         bt_clr_l {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 10 20>;
+        };
+
+        bt_c_r {
+            bindings = <&bt BT_CLR>;
+            key-positions = <8 18 28>;
+        };
+
+        bt_c_l {
+            bindings = <&bt BT_CLR>;
+            key-positions = <1 11 21>;
         };
     };
 
