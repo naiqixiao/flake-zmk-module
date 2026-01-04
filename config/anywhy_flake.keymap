@@ -764,10 +764,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U            &kp Y               &td_SLASHColon
-  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E      &hmr_shift RSHFT I  &kp O
-  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaQ       &td_periodQuestion  &kp RET
-  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp RIGHT_SHIFT  &none               &none
+  &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U        &kp Y               &td_SLASHColon
+  &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E  &hmr_shift RSHFT I  &kp O
+  &kp Z        &kp X         &kp C         &kp D                &kp V          &kp K          &kp H        &td_commaQ   &td_periodQuestion  &kp RET
+  &none        &none         &lt 4 DELETE  &lt NUM SPACE        &lt NAV TAB    &kp BACKSPACE  &kp SPACE    &kp GLOBE    &none               &none
             >;
         };
 
