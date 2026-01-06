@@ -800,10 +800,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-  &none     &none         &kp LS(LA(F))  &none       &kp LC(LS(M))       &kp LG(X)       &kp LG(C)  &kp LG(V)      &kp LG(F)  &kp LG(A)
-  &kp LCMD  &kp LCTRL     &kp LEFT_ALT   &kp LSHIFT  &kp LC(UP_ARROW)    &kp LEFT_ARROW  &kp DOWN   &kp UP         &kp RIGHT  &kp LG(D)
-  &none     &kp LC(LEFT)  &kp LC(RIGHT)  &kp F11     &kp LC(DOWN)        &kp HOME        &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp RG(SLASH)
-  &trans    &trans        &kp LSHFT      &none       &kp LEFT_ALT        &trans          &kp RGUI   &trans         &trans     &trans
+  &none     &kp LG(N0)    &kp LG(PLUS)   &kp LG(MINUS)  &kp LC(LS(M))       &kp LG(X)       &kp LG(C)  &kp LG(V)      &kp LG(F)  &kp LG(A)
+  &kp LCMD  &kp LCTRL     &kp LEFT_ALT   &kp LSHIFT     &kp LC(UP_ARROW)    &kp LEFT_ARROW  &kp DOWN   &kp UP         &kp RIGHT  &kp LG(D)
+  &none     &kp LC(LEFT)  &kp LC(RIGHT)  &kp F11        &kp LC(DOWN)        &kp HOME        &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp RG(SLASH)
+  &trans    &trans        &kp LSHFT      &none          &kp LEFT_ALT        &trans          &kp RGUI   &trans         &trans     &trans
             >;
         };
 
