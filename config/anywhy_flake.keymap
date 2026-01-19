@@ -625,6 +625,7 @@
         // 4. Else if 200 ms elapses with no trigger -> hold.
         // 5. Quick-tap may force tap on rapid repeats.
         // 6. prior idle time must be > 50ms at press to allow hold (prevent accidental holds while typing).
+        // 7. hold-trigger-on-release: releasing a trigger key also forces hold (improves roll handling).
 
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
@@ -636,6 +637,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <5 6 7 8 9 19 29 28 27 17 18 26 16 15 25 35 36 37>;        // force hold as soon as a right-hand key is released
+            hold-trigger-on-release;
         };
 
         hmr: hmr {
@@ -648,6 +650,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34 32>;        // force hold as soon as a right-hand key is released
+            hold-trigger-on-release;
         };
 
         hml_shift: hml_shift {
@@ -660,6 +663,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <5 6 7 8 9 19 29 28 27 17 18 26 16 15 25 35 36 37>;        // force hold as soon as a right-hand key is released
+            hold-trigger-on-release;
         };
 
         hmr_shift: hmr_shift {
@@ -672,6 +676,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 33 34 32>;        // force hold as soon as a right-hand key is released
+            hold-trigger-on-release;
         };
 
         /*
