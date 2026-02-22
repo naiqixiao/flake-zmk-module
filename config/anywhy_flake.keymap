@@ -94,14 +94,12 @@
 &sk {
     release-after-ms = <2000>;
     quick-release;
-    ignore-modifiers;
 };
 
 // default layer-tap config
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <175>;
     quick-tap-ms = <100>;
     retro-tap;
 };
@@ -641,7 +639,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;        // optional tighter term so holds trigger sooner
+            tapping-term-ms = <280>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;  // allows faster hold triggering after idle
             bindings = <&kp>, <&kp>;
@@ -654,7 +652,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;        // optional tighter term so holds trigger sooner
+            tapping-term-ms = <280>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;  // allows faster hold triggering after idle
             bindings = <&kp>, <&kp>;
@@ -667,7 +665,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;        // optional tighter term so holds trigger sooner
+            tapping-term-ms = <280>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;  // allows faster hold triggering after idle
             bindings = <&kp>, <&kp>;
@@ -680,7 +678,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;        // optional tighter term so holds trigger sooner
+            tapping-term-ms = <280>;        // optional tighter term so holds trigger sooner
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;  // allows faster hold triggering after idle
             bindings = <&kp>, <&kp>;
