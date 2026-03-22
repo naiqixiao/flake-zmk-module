@@ -551,6 +551,32 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
+        // macros for R shortcuts
+
+        r_assign: r_assign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp SPACE &kp LT &kp MINUS &kp SPACE>;
+        };
+
+        r_pipe_native: r_pipe_native {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;
+        };
+
+        r_pipe_mag: r_pipe_mag {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp SPACE &kp PRCNT &kp GT &kp PRCNT &kp SPACE>;
+        };
     };
 
     behaviors {
@@ -628,6 +654,13 @@
                 <&kp RG(BACKSPACE)>;
 
             // 3 Taps: Clear Line Macro
+        };
+
+        r_smart_key: r_smart_key {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&r_assign>, <&r_pipe_native>;
+            mods = <(MOD_LSFT)>;
         };
 
         // 1. Press hml key.
@@ -813,7 +846,7 @@
   &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE  &kp N7         &kp N8        &kp N9               &none
   &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS  &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
   &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL  &kp N1         &kp N2        &kp N3               &kp DOT
-  &trans    &trans         &trans        &kp LSHFT             &none      &trans     &kp RC(SPACE)  &trans        &trans               &trans
+  &trans    &trans         &trans        &kp LSHFT             &none      &trans     &kp RC(SPACE)  &r_smart_key  &trans               &trans
             >;
         };
 
@@ -838,18 +871,6 @@
   &none         &bt BT_NXT    &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none
   &none         &bt BT_PRV    &none           &none           &tog QWERT       &none  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none
   &trans        &trans        &trans          &trans          &trans           &none  &none              &none             &none            &none
-            >;
-        };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        sym_layer {
-            label = "SYM";
-            bindings = <
-  &none   &kp AMPS   &kp ASTRK  &kp LBRC   &kp RBRC     &none     &kp N7       &kp N8    &kp N9  &none
-  &none   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS  &kp PERCENT  &kp N4    &kp N5  &kp N6
-  &none   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE  &kp C_MUTE   &kp C_PP  &kp N0  &kp N1
-  &trans  &trans     &trans     &kp LPAR   &kp RPAR     &none     &trans       &none     &trans  &trans
             >;
         };
     };
