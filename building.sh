@@ -35,3 +35,4 @@ echo "Right Side Build Complete: anywhy_flake_right.uf2"
 echo "Build complete! The .uf2 files are ready in the root directory."
 
 npx repomix@latest --include "config/**, boards/**" 
+

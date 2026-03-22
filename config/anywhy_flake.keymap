@@ -426,35 +426,35 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &bt BT_CLR>;
-            label = "BT_CLR_0";
+            display-name = "BT_CLR_0";
         };
 
         bt_clr_1: bt_clr_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &bt BT_CLR>;
-            label = "BT_CLR_1";
+            display-name = "BT_CLR_1";
         };
 
         bt_clr_2: bt_clr_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &bt BT_CLR>;
-            label = "BT_CLR_2";
+            display-name = "BT_CLR_2";
         };
 
         bt_clr_3: bt_clr_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &bt BT_CLR>;
-            label = "BT_CLR_3";
+            display-name = "BT_CLR_3";
         };
 
         bt_clr_4: bt_clr_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &bt BT_CLR>;
-            label = "BT_CLR_4";
+            display-name = "BT_CLR_4";
         };
 
         // Macro to clear the entire line
@@ -536,7 +536,7 @@
 
         bt0: bt0 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT0";
+            display-name = "BT0";
             bindings = <&bt BT_SEL 0>, <&bt_clr_0>;
 
             #binding-cells = <0>;
@@ -545,7 +545,7 @@
 
         bt1: bt1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT1";
+            display-name = "BT1";
             bindings = <&bt BT_SEL 1>, <&bt_clr_1>;
 
             #binding-cells = <0>;
@@ -554,7 +554,7 @@
 
         bt2: bt2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT2";
+            display-name = "BT2";
             bindings = <&bt BT_SEL 2>, <&bt_clr_2>;
 
             #binding-cells = <0>;
@@ -563,7 +563,7 @@
 
         bt3: bt3 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT3";
+            display-name = "BT3";
             bindings = <&bt BT_SEL 3>, <&bt_clr_3>;
 
             #binding-cells = <0>;
@@ -572,7 +572,7 @@
 
         bt4: bt4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "BT4";
+            display-name = "BT4";
             bindings = <&bt BT_SEL 4>, <&bt_clr_4>;
 
             #binding-cells = <0>;
@@ -582,7 +582,7 @@
         td_bs_word_line: tap_dance_backspace {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_BS_WORD_LINE";
+            display-name = "TD_BS_WORD_LINE";
             #binding-cells = <0>;
             tapping-term-ms = <190>;    // Slightly longer to allow for 3 taps
             bindings =
@@ -678,7 +678,7 @@
         tm: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
             display-name = "Mod-Tap";
-            label = "THUMB_MODS";
+            display-name = "THUMB_MODS";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
@@ -691,7 +691,7 @@
         td_commaQ: td_commaQ {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_COMMAQ";
+            display-name = "TD_COMMAQ";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp COMMA>, <&kp SQT>;
@@ -700,7 +700,7 @@
         td_periodQuestion: td_periodQuestion {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_PERIODQUESTION";
+            display-name = "TD_PERIODQUESTION";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp DOT>, <&kp QUESTION>;
@@ -709,7 +709,7 @@
         td_SLASHColon: td_SLASHColon {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_SLASHCOLON";
+            display-name = "TD_SLASHCOLON";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp SLASH>, <&kp COLON>;
@@ -718,7 +718,7 @@
         td_quotColon: td_quotColon {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_QUOTCOLON";
+            display-name = "TD_QUOTCOLON";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp SQT>, <&kp COLON>;
@@ -727,7 +727,7 @@
         td_oSQT: td_oSQT {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_OSQT";
+            display-name = "TD_OSQT";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
             bindings = <&kp O>, <&kp SQT>;
@@ -736,7 +736,7 @@
         td_gColon: td_gColon {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_GColon";
+            display-name = "TD_GColon";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
             bindings = <&kp G>, <&kp COLON>;
@@ -745,7 +745,7 @@
         td_shift_caps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Tap Dance";
-            label = "TD_SHIFT_CAPS";
+            display-name = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sk LSHIFT>, <&caps_word>;
@@ -757,7 +757,7 @@
             bindings = <&kp TILDE>, <&kp GRAVE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "REVERSE_TILDE";
+            display-name = "REVERSE_TILDE";
         };
     };
 
@@ -767,7 +767,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         base_layer {
-            label = "BASE";
+            display-name = "BASE";
             bindings = <
   &kp Q        &kp W         &kp F         &kp P                &kp B          &kp J          &kp L        &kp U           &kp Y               &td_SLASHColon
   &hml LCMD A  &hml LCTRL R  &hml LALT S   &hml_shift LSHIFT T  &kp G          &kp M          &hmr RCMD N  &hmr RALT E     &hmr_shift RSHFT I  &kp O
@@ -779,7 +779,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         QWERT_layer {
-            label = "QWERT";
+            display-name = "QWERT";
             bindings = <
   &kp Q        &kp W         &kp E        &kp R                &kp T     &kp Y   &kp U        &kp I        &kp O               &kp P
   &hml LCMD A  &hml LCTRL S  &hml LALT D  &hml_shift LSHIFT F  &kp G     &kp H   &hmr RCMD J  &hmr RALT K  &hmr_shift RSHFT L  &td_SLASHColon
@@ -791,7 +791,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         num_layer {
-            label = "NUM";
+            display-name = "NUM";
             bindings = <
   &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE  &kp N7         &kp N8        &kp N9               &none
   &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS  &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
@@ -803,7 +803,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
-            label = "NAV";
+            display-name = "NAV";
             bindings = <
   &none     &kp LG(N0)    &kp LG(PLUS)   &kp LG(MINUS)  &kp LC(LS(M))       &kp LG(X)       &kp LG(C)  &kp LG(V)      &kp LG(F)  &kp LG(A)
   &kp LCMD  &kp LCTRL     &kp LEFT_ALT   &kp LSHIFT     &kp LC(UP_ARROW)    &kp LEFT_ARROW  &kp DOWN   &kp UP         &kp RIGHT  &kp LG(D)
@@ -815,7 +815,7 @@
         //▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         fun_layer {
-            label = "FUN";
+            display-name = "FUN";
             bindings = <
   &bt0    &bt1        &bt2            &bt3            &bt4             &none  &none              &none             &none            &none
   &none   &bt BT_NXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &none  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none
