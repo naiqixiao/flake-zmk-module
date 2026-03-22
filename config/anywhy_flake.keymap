@@ -766,7 +766,7 @@
             bindings = <&kp AMPERSAND>, <&kp PIPE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "AND_OR";
+            display-name = "AND_OR";
         };
     };
 
