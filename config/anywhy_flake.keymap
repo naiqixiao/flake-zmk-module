@@ -164,16 +164,7 @@
         combo_prcnt {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PRCNT>;
-            key-positions = <4 14>;
-            layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_TERM_IDLE>;
-            slow-release;
-        };
-
-        combo_dquot {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <>;
+            key-positions = <27 26>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -192,8 +183,8 @@
 
         combo_grave {
             timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp GRAVE>;
-            key-positions = <11 21>;
+            bindings = <&reverse_tilde>;
+            key-positions = <23 24>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -202,7 +193,7 @@
         combo_bslh {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp BSLH>;
-            key-positions = <12 22>;
+            key-positions = <5 6>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -270,7 +261,7 @@
         combo_caret {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp CARET>;
-            key-positions = <5 15>;
+            key-positions = <7 6>;
             layers = <2>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -332,15 +323,6 @@
             slow-release;
         };
 
-        combo_pipe {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp PIPE>;
-            key-positions = <5 6>;
-            layers = <QWERT BASE NAV NUM>;
-            require-prior-idle-ms = <COMBO_TERM_IDLE>;
-            slow-release;
-        };
-
         // Horizontal combos
 
         combo_lbkt {
@@ -379,28 +361,10 @@
             slow-release;
         };
 
-        combo_lbrc {
-            timeout-ms = <COMBO_TERM_FAST>;
-            bindings = <&kp LBRC>;
-            key-positions = <26 27>;
-            layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_TERM_IDLE>;
-            slow-release;
-        };
-
-        combo_rbrc {
-            timeout-ms = <COMBO_TERM_FAST>;
-            bindings = <&kp RBRC>;
-            key-positions = <27 28>;
-            layers = <QWERT BASE>;
-            require-prior-idle-ms = <COMBO_TERM_IDLE>;
-            slow-release;
-        };
-
         combo_semi {
             timeout-ms = <COMBO_TERM_FAST>;
             bindings = <&kp SEMI>;
-            key-positions = <8 9>;
+            key-positions = <28 27>;
             layers = <0 1>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -785,6 +749,15 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sk LSHIFT>, <&caps_word>;
+        };
+
+        reverse_tilde: reverse_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "REVERSE_TILDE";
         };
     };
 
