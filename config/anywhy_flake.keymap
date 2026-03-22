@@ -173,7 +173,7 @@
         combo_dquot {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <13 14>;
+            key-positions = <>;
             layers = <QWERT BASE NAV NUM>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
@@ -182,7 +182,7 @@
         combo_squot {
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp SQT>;
-            key-positions = <18 19>;
+            key-positions = <14 13>;
             layers = <0 1>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
