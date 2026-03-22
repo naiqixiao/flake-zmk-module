@@ -287,7 +287,7 @@
 
         combo_amps {
             timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp AMPS>;
+            bindings = <&and_or>;
             key-positions = <15 16>;
             layers = <QWERT BASE>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
@@ -758,6 +758,15 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
             display-name = "REVERSE_TILDE";
+        };
+
+        and_or: and_or {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AMPERSAND>, <&kp PIPE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "AND_OR";
         };
     };
 
