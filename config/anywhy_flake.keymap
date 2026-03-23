@@ -165,7 +165,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp PRCNT>;
             key-positions = <27 26>;
-            layers = <QWERT BASE NAV NUM>;
+            layers = <0>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
@@ -300,7 +300,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             bindings = <&kp MINUS>;
             key-positions = <25 26>;
-            layers = <QWERT BASE>;
+            layers = <0>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
             slow-release;
         };
