@@ -172,7 +172,7 @@
 
         combo_squot {
             timeout-ms = <COMBO_TERM_SLOW>;
-            bindings = <&kp SQT>;
+            bindings = <&quoteQuote>;
             key-positions = <14 13>;
             layers = <0 1>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
@@ -767,6 +767,16 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
             display-name = "AND_OR";
+        };
+
+        quoteQuote: quoteQuote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            display-name = "REVERSE_TILDE";
+            label = "QUOTEQUOTE";
         };
     };
 
