@@ -812,10 +812,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE  &kp N7         &kp N8        &kp N9               &none
-  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS  &hmr RCMD N4   &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
-  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL  &kp N1         &kp N2        &kp N3               &kp DOT
-  &trans    &trans         &trans        &kp LSHFT             &none      &trans     &kp RC(SPACE)  &r_smart_key  &trans               &trans
+  &none     &kp F9         &kp F10       &kp F11               &kp F12    &kp GRAVE  &kp N7        &kp N8        &kp N9               &kp RC(SPACE)
+  &kp LCMD  &hml LCTRL F5  &hml LALT F6  &hml_shift LSHIFT F7  &kp F8     &kp MINUS  &hmr RCMD N4  &hmr RALT N5  &hmr_shift RSHFT N6  &kp N0
+  &none     &kp F1         &kp F2        &kp F3                &kp F4     &kp EQUAL  &kp N1        &kp N2        &kp N3               &kp DOT
+  &trans    &trans         &trans        &kp LSHFT             &none      &trans     &trans        &r_smart_key  &trans               &trans
             >;
         };
 
