@@ -419,6 +419,11 @@
             layers = <FUN>;
             require-prior-idle-ms = <COMBO_TERM_IDLE>;
         };
+
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <13 12 16 17>;
+        };
     };
 
     macros {
