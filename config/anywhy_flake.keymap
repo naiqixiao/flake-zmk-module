@@ -98,6 +98,7 @@
 };
 
 // soft off
+
 &soft_off {
     hold-time-ms = <5000>; // Only turn off it the key is held for 5 seconds or longer.
 };
@@ -427,7 +428,7 @@
 
         soft_off {
             bindings = <&soft_off>;
-            key-positions = <13 12 16 17>;
+            key-positions = <22 23 27 26>;
         };
     };
 
