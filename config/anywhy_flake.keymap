@@ -60,7 +60,6 @@
 #define RH3 38
 #define RH4 39
 #define XXX &none
-#define TODO ___
 #define ___ &trans
 #define BASE 0
 #define QWERT 1
@@ -587,7 +586,6 @@
 
         td_bs_word_line: tap_dance_backspace {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_BS_WORD_LINE";
             #binding-cells = <0>;
             tapping-term-ms = <190>;    // Slightly longer to allow for 3 taps
@@ -718,7 +716,6 @@
 
         tm: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
-            display-name = "Mod-Tap";
             display-name = "THUMB_MODS";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -731,7 +728,6 @@
 
         td_commaQ: td_commaQ {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_COMMAQ";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
@@ -740,7 +736,6 @@
 
         td_periodQuestion: td_periodQuestion {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_PERIODQUESTION";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
@@ -749,7 +744,6 @@
 
         td_SLASHColon: td_SLASHColon {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_SLASHCOLON";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
@@ -758,7 +752,6 @@
 
         td_quotColon: td_quotColon {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_QUOTCOLON";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
@@ -767,7 +760,6 @@
 
         td_oSQT: td_oSQT {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_OSQT";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
@@ -776,7 +768,6 @@
 
         td_gColon: td_gColon {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_GColon";
             #binding-cells = <0>;
             tapping-term-ms = <140>;
@@ -785,7 +776,6 @@
 
         td_shift_caps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Tap Dance";
             display-name = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -816,8 +806,7 @@
             bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "REVERSE_TILDE";
-            label = "QUOTEQUOTE";
+            display-name = "QUOTEQUOTE";
         };
     };
 
