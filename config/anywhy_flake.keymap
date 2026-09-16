@@ -839,7 +839,7 @@
                 &kp K             &hmr_command RGUI H
                                     &td_commaQ     &td_periodQuestion                 &kp RET
 
-                &none             &none          &lt FUN DELETE &lt NUM SPACE       &lt NAV TAB
+                &none             &none          &kp DELETE &lt NUM SPACE       &lt NAV TAB
                 &kp BACKSPACE     &kp SPACE      &td_shift_caps &none              &none
             >;
         };
@@ -872,15 +872,15 @@
 
             bindings = <
 
-                &none     &kp F9      &kp F10     &kp F11     &kp F12
+                &bt0    &bt1        &bt2            &bt3      &bt4
 
                 &kp GRAVE &kp N7      &kp N8      &kp N9      &kp RC(SPACE)
 
-                &kp LCMD  &kp F5      &kp F6      &kp F7      &kp F8
+                &kp C_PREV  &kp C_NEXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))
 
                 &kp MINUS &kp N4      &kp N5      &kp N6      &kp N0
 
-                &none     &kp F1      &kp F2      &kp F3      &kp F4
+                &none     &kp C_VOLUME_DOWN  &kp C_MUTE       &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  
 
                 &kp EQUAL &kp N1      &kp N2      &kp N3      &kp DOT
 
