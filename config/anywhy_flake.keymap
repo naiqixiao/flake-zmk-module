@@ -828,7 +828,7 @@
                 &kp K             &hmr_command RGUI H
                                     &td_commaQ     &td_periodQuestion                 &kp RET
 
-                &none             &none          &kp DELETE &lt NUM SPACE       &lt NAV TAB
+                &none             &none          &lt NAV DELETE &lt NUM SPACE       &kp TAB
                 &kp BACKSPACE     &kp SPACE      &td_shift_caps &none              &none
             >;
         };
