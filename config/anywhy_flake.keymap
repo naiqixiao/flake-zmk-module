@@ -817,10 +817,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-  &kp Q              &kp W         &kp F           &kp P                &kp B      &kp J          &kp L                &kp U           &kp Y               &td_SLASHColon
-  &kp A              &kp R         &kp S           &kp T                &kp G      &kp M          &kp N                &kp E           &kp I               &kp O
-  &hml_pinky LGUI Z  &hml LCTRL X  &hml LALT C     &hml_shift LSHIFT D  &kp V      &kp K          &hmr_command RGUI H  &td_commaQ      &td_periodQuestion  &kp RET
-  &none              &none         &kp DELETE  &lt NAV SPACE        &lt NUM TAB    &kp BACKSPACE  &lt FUN SPACE            &td_shift_caps  &none               &none
+  &kp Q              &kp W         &kp F        &kp P                &kp B          &kp J          &kp L                &kp U           &kp Y               &td_SLASHColon
+  &kp A              &kp R         &kp S        &kp T                &kp G          &kp M          &kp N                &kp E           &kp I               &kp O
+  &hml_pinky LGUI Z  &hml LCTRL X  &hml LALT C  &hml_shift LSHIFT D  &kp V          &kp K          &hmr_command RGUI H  &td_commaQ      &td_periodQuestion  &kp RET
+  &none              &none         &kp DELETE   &lt NAV SPACE        &lt NUM TAB    &kp BACKSPACE  &lt FUN SPACE        &td_shift_caps  &none               &none
             >;
         };
 
@@ -841,23 +841,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-
-                &none     &kp F9      &kp F10     &kp F11     &kp F12
-
-                &kp GRAVE &kp N7      &kp N8      &kp N9      &kp RC(SPACE)
-
-                &kp LCMD  &kp F5      &kp F6      &kp F7      &kp F8
-
-                &kp MINUS &kp N4      &kp N5      &kp N6      &kp N0
-
-                &none     &kp F1      &kp F2      &kp F3      &kp F4
-
-                &kp EQUAL &kp N1      &kp N2      &kp N3      &kp DOT
-
-                &trans    &trans      &trans      &kp LSHFT   &none
-
-                &trans    &trans      &r_smart_key &trans     &trans
-
+  &none     &kp F9  &kp F10  &kp F11    &kp F12    &kp GRAVE  &kp N7  &kp N8        &kp N9  &kp RC(SPACE)
+  &kp LCMD  &kp F5  &kp F6   &kp F7     &kp F8     &kp MINUS  &kp N4  &kp N5        &kp N6  &kp N0
+  &none     &kp F1  &kp F2   &kp F3     &kp F4     &kp EQUAL  &kp N1  &kp N2        &kp N3  &kp DOT
+  &trans    &trans  &trans   &kp LSHFT  &none      &trans     &trans  &r_smart_key  &trans  &trans
             >;
         };
 
@@ -878,10 +865,10 @@
         fun_layer {
             display-name = "FUN";
             bindings = <
-  &bt0                &bt1        &bt2            &bt3            &bt4             &bt0    &bt1        &bt2            &bt3            &bt4            
-  &kp C_PREV          &kp C_NEXT      &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &kp LS(LA(F))      &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none
-  &none               &kp C_VOLUME_DOWN  &kp C_MUTE   &kp C_VOLUME_UP &kp C_PLAY_PAUSE    &kp LS(LG(N4))      &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none
-  &trans              &trans          &trans          &trans          &trans           &none      &none              &none             &none            &none
+  &bt_clr_0   &bt_clr_1   &bt_clr_2       &bt_clr_3       &bt_clr_4        &bt0            &bt1               &bt2              &bt3             &bt4
+  &kp C_PREV  &kp C_NEXT  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LA(F))    &kp LS(LA(F))   &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &none
+  &trans      &trans      &trans          &trans          &trans           &kp LS(LG(N4))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &none
+  &trans      &trans      &trans          &trans          &trans           &none           &none              &none             &none            &none
             >;
         };
     };
