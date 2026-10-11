@@ -819,7 +819,7 @@
             bindings = <
   &kp Q              &kp W         &kp F        &kp P                &kp B          &kp J          &kp L                &kp U           &kp Y               &td_SLASHColon
   &kp A              &kp R         &kp S        &kp T                &kp G          &kp M          &kp N                &kp E           &kp I               &kp O
-  &hml_pinky LGUI Z  &hml LCTRL X  &hml LALT C  &hml_shift LSHIFT D  &kp V          &kp K          &hmr_command RGUI H  &td_commaQ      &td_periodQuestion  &kp RET
+  &hml_pinky LGUI Z  &hml LCTRL X  &hml LALT C  &hml_shift LSHIFT D  &kp V          &hmr_command RCTRL  K          &hmr_command RGUI H  &td_commaQ      &td_periodQuestion  &kp RET
   &none              &none         &kp DELETE   &lt NAV SPACE        &lt NUM TAB    &kp BACKSPACE  &lt FUN SPACE        &td_shift_caps  &none               &none
             >;
         };
